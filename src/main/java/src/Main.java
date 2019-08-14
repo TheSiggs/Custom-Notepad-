@@ -3,7 +3,7 @@ package src;
 import javafx.application.Application;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
-import javafx.scene.layout.StackPane;
+import javafx.scene.layout.BorderPane;
 import javafx.stage.Stage;
 
 public class Main extends Application {
@@ -13,18 +13,11 @@ public class Main extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception{
-        primaryStage.setTitle("Title of Window");
-        Button button = new Button();
-        button.setText("Click Me!");
+        primaryStage.setTitle("Untitled - Ultimate Text Editor 9000");
 
-        //This class will handle the button events
-        button.setOnAction(e -> {
-            System.out.println("Hello World!");
-        });
 
-        StackPane layout = new StackPane();
-        layout.getChildren().add(button);
-        Scene scene = new Scene(layout, 300, 250);
+        BorderPane layout = new BorderPane();
+        Scene scene = new Scene(layout, 500, 800);
         primaryStage.setScene(scene);
         primaryStage.show();
     }
