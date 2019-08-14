@@ -22,6 +22,8 @@ public class Main extends Application {
         codeArea.setParagraphGraphicFactory(LineNumberFactory.get(codeArea));
 
         BorderPane layout = new BorderPane();
+        layout.setCenter(codeArea);
+
         Scene scene = new Scene(layout, 500, 800);
         primaryStage.setScene(scene);
         primaryStage.show();
