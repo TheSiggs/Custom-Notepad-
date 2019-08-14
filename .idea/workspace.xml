@@ -1,73 +1,624 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4f11b627-ceab-470f-9a62-4e1c9338080b" name="Default Changelist" comment="" />
-    <ignored path="$PROJECT_DIR$/out/" />
-    <ignored path="$PROJECT_DIR$/target/" />
+    <list default="true" id="853acc11-1aaa-4805-ba17-962338d0d2fd" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../../../../159271 Computational Thinking for Problem Solving/Assiagments/Assiagment 1/Assiagment 1.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159271 Computational Thinking for Problem Solving/Assiagments/Assiagment 1/Assignment1.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159271 Computational Thinking for Problem Solving/Assiagments/Assiagment 1/Cell.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159271 Computational Thinking for Problem Solving/Assiagments/Assiagment 1/Futoshiki.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159271 Computational Thinking for Problem Solving/Assiagments/Assiagment 1/Snapshot.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159271 Computational Thinking for Problem Solving/Assiagments/Assiagment 1/Solver.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159271 Computational Thinking for Problem Solving/Assiagments/Assiagment 1/Sudiku_16059692.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159271 Computational Thinking for Problem Solving/Assiagments/Assiagment 1/SudokuApp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159271 Computational Thinking for Problem Solving/Assiagments/Assiagment 1/Sudoku_IO.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159271 Computational Thinking for Problem Solving/Assiagments/Assiagment 1/easypuzzles/easypuzzle.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159271 Computational Thinking for Problem Solving/Assiagments/Assiagment 1/easypuzzles/easypuzzle1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159271 Computational Thinking for Problem Solving/Assiagments/Assiagment 1/easypuzzles/easypuzzle2.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159271 Computational Thinking for Problem Solving/Assiagments/Assiagment 1/easypuzzles/easypuzzle3.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159271 Computational Thinking for Problem Solving/Assiagments/Assiagment 1/easypuzzles/easypuzzle4.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159271 Computational Thinking for Problem Solving/Assiagments/Assiagment 1/hardpuzzles/hardpuzzle.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159271 Computational Thinking for Problem Solving/Assiagments/Assiagment 1/hardpuzzles/hardpuzzle1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159271 Computational Thinking for Problem Solving/Assiagments/Assiagment 1/hardpuzzles/hardpuzzle2.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159271 Computational Thinking for Problem Solving/Assiagments/Assiagment 1/hardpuzzles/hardpuzzle3.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159271 Computational Thinking for Problem Solving/Assiagments/Assiagment 1/hardpuzzles/hardpuzzle4.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159271 Computational Thinking for Problem Solving/Assiagments/Assignment 2/Assignment 2.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159271 Computational Thinking for Problem Solving/Assiagments/Assignment 2/Example where greedy doen't work.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159271 Computational Thinking for Problem Solving/Assiagments/Assignment 2/QD.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159271 Computational Thinking for Problem Solving/Assiagments/Assignment 2/skeleton/building.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159271 Computational Thinking for Problem Solving/Assiagments/Assignment 2/skeleton/building_io.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159271 Computational Thinking for Problem Solving/Assiagments/Assignment 2/skeleton/collapse.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159271 Computational Thinking for Problem Solving/Assiagments/Assignment 2/skeleton/optimizer.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159271 Computational Thinking for Problem Solving/Assiagments/Assignment 3/Computational Thinking.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159271 Computational Thinking for Problem Solving/Assiagments/Assignment 3/Computational Thinking_files/MainBook.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159271 Computational Thinking for Problem Solving/Assiagments/Assignment 3/Computational Thinking_files/MathJax.js.download" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159271 Computational Thinking for Problem Solving/Assiagments/Assignment 3/Submission/Assignment3.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159271 Computational Thinking for Problem Solving/Assiagments/Assignment 3/Submission/Comparsion Report.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159271 Computational Thinking for Problem Solving/Assiagments/Assignment 3/Submission/greedy_max_ind_set1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159271 Computational Thinking for Problem Solving/Assiagments/Assignment 3/Submission/greedy_max_ind_set2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159271 Computational Thinking for Problem Solving/Assiagments/Assignment 3/Submission/max_ind_set_improved.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159271 Computational Thinking for Problem Solving/Assiagments/Assignment 3/Submission/testgraphs/testgraph1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159271 Computational Thinking for Problem Solving/Assiagments/Assignment 3/Submission/testgraphs/testgraph2.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159271 Computational Thinking for Problem Solving/Assiagments/Assignment 3/Submission/testgraphs/testgraph3.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159271 Computational Thinking for Problem Solving/Assiagments/Assignment 3/Submission/testgraphs/testgraph4.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159271 Computational Thinking for Problem Solving/Assiagments/Assignment 3/Submission/testgraphs/testgraph5.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159271 Computational Thinking for Problem Solving/Assiagments/Assignment 3/Submission/testgraphs/testgraph6.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159271 Computational Thinking for Problem Solving/Assiagments/Assignment 3/Submission/testgraphs/testgraph7.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159271 Computational Thinking for Problem Solving/Assiagments/Assignment 3/Submission/testgraphs/testgraph8.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159271 Computational Thinking for Problem Solving/Assiagments/Assignment 3/Submission/testgraphs/testgraph9.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159271 Computational Thinking for Problem Solving/Assiagments/Assignment 3/assignment3.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159271 Computational Thinking for Problem Solving/Assiagments/Assignment 3/test graphs Assignment 3.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159271 Computational Thinking for Problem Solving/Assiagments/Assignment 3/testgraphs/testgraph1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159271 Computational Thinking for Problem Solving/Assiagments/Assignment 3/testgraphs/testgraph2.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159271 Computational Thinking for Problem Solving/Assiagments/Assignment 3/testgraphs/testgraph3.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159271 Computational Thinking for Problem Solving/Assiagments/Assignment 3/testgraphs/testgraph4.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159271 Computational Thinking for Problem Solving/Assiagments/Assignment 3/testgraphs/testgraph5.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159271 Computational Thinking for Problem Solving/Assiagments/Assignment 3/testgraphs/testgraph6.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159271 Computational Thinking for Problem Solving/Assiagments/Assignment 3/testgraphs/testgraph7.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159271 Computational Thinking for Problem Solving/Assiagments/Assignment 3/testgraphs/testgraph8.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159271 Computational Thinking for Problem Solving/Assiagments/Assignment 3/testgraphs/testgraph9.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159271 Computational Thinking for Problem Solving/Labs/Tutorial 1/Words" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159271 Computational Thinking for Problem Solving/Labs/Tutorial 1/Wordsless" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159271 Computational Thinking for Problem Solving/Labs/Tutorial 1/tut.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159271 Computational Thinking for Problem Solving/Labs/Tutorial 1/tut.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159271 Computational Thinking for Problem Solving/Labs/Tutorial 1/tut/Words" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159271 Computational Thinking for Problem Solving/Labs/Tutorial 1/tut/Wordsless" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159271 Computational Thinking for Problem Solving/Labs/Tutorial 1/tut/tut.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159271 Computational Thinking for Problem Solving/Labs/Tutorial 1/tut/tut.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159271 Computational Thinking for Problem Solving/Labs/Tutorial 2/Maze.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159271 Computational Thinking for Problem Solving/Labs/Tutorial 2/Maze2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159271 Computational Thinking for Problem Solving/Labs/Tutorial 2/random_maze.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159271 Computational Thinking for Problem Solving/Labs/Tutorial 2/random_mazeS.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159271 Computational Thinking for Problem Solving/Labs/Tutorial 3/knapsack.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159271 Computational Thinking for Problem Solving/Labs/Tutorial 3/testing.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159271 Computational Thinking for Problem Solving/Labs/Tutorial 3/tut.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159271 Computational Thinking for Problem Solving/Labs/Tutorial 4/YuGiOh.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159271 Computational Thinking for Problem Solving/Labs/Tutorial 5/ct_tutorial_complexity.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159271 Computational Thinking for Problem Solving/Labs/Tutorial 5/ct_tutorial_complexity_ma.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159271 Computational Thinking for Problem Solving/Labs/Tutorial 5/max_independant.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159271 Computational Thinking for Problem Solving/Labs/Tutorial 7/Tutorial 7 breif.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159271 Computational Thinking for Problem Solving/Labs/Tutorial 7/results report.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159271 Computational Thinking for Problem Solving/Labs/Tutorial 7/testgraphs/testgraph1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159271 Computational Thinking for Problem Solving/Labs/Tutorial 7/testgraphs/testgraph2.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159271 Computational Thinking for Problem Solving/Labs/Tutorial 7/testgraphs/testgraph3.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159271 Computational Thinking for Problem Solving/Labs/Tutorial 7/testgraphs/testgraph4.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159271 Computational Thinking for Problem Solving/Labs/Tutorial 7/testgraphs/testgraph5.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159271 Computational Thinking for Problem Solving/Labs/Tutorial 7/testgraphs/testgraph6.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159271 Computational Thinking for Problem Solving/Labs/Tutorial 7/testgraphs/testgraph7.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159271 Computational Thinking for Problem Solving/Labs/Tutorial 7/tutorial7.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159271 Computational Thinking for Problem Solving/Labs/Tutorial 8/tutorial8_complexity.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159271 Computational Thinking for Problem Solving/Labs/Tutorial 8/tutorial8ans.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159271 Computational Thinking for Problem Solving/Notes/Lecture1_introAlgs.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159271 Computational Thinking for Problem Solving/Notes/Lecture_1a-Loopinvariants.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159271 Computational Thinking for Problem Solving/Notes/chapter1_introduction.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159271 Computational Thinking for Problem Solving/Notes/chapter2-algorithms.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Assiagments/Java/Assgin1.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Assiagments/Java/Assgin1/build.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Assiagments/Java/Assgin1/build/built-jar.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Assiagments/Java/Assgin1/build/classes/assignment1/Address.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Assiagments/Java/Assgin1/build/classes/assignment1/Course.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Assiagments/Java/Assgin1/build/classes/assignment1/FXMLDocument.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Assiagments/Java/Assgin1/build/classes/assignment1/Student.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Assiagments/Java/Assgin1/build/classes/assignment1/StudentListEditor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Assiagments/Java/Assgin1/build/classes/assignment1/StudentStorage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Assiagments/Java/Assgin1/build/test/classes/assgin1/AddressTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Assiagments/Java/Assgin1/build/test/results/TEST-assgin1.AddressTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Assiagments/Java/Assgin1/dist/Assignment1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Assiagments/Java/Assgin1/dist/Assignment1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Assiagments/Java/Assgin1/dist/Assignment1.jnlp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Assiagments/Java/Assgin1/dist/web-files/dtjava.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Assiagments/Java/Assgin1/dist/web-files/error.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Assiagments/Java/Assgin1/dist/web-files/get_java.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Assiagments/Java/Assgin1/dist/web-files/get_javafx.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Assiagments/Java/Assgin1/dist/web-files/javafx-chrome.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Assiagments/Java/Assgin1/dist/web-files/javafx-loading-100x100.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Assiagments/Java/Assgin1/dist/web-files/javafx-loading-25x25.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Assiagments/Java/Assgin1/dist/web-files/upgrade_java.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Assiagments/Java/Assgin1/dist/web-files/upgrade_javafx.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Assiagments/Java/Assgin1/manifest.mf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Assiagments/Java/Assgin1/nbproject/build-impl.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Assiagments/Java/Assgin1/nbproject/configs/Run_as_WebStart.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Assiagments/Java/Assgin1/nbproject/configs/Run_in_Browser.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Assiagments/Java/Assgin1/nbproject/genfiles.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Assiagments/Java/Assgin1/nbproject/jfx-impl.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Assiagments/Java/Assgin1/nbproject/private/configs/Run_as_WebStart.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Assiagments/Java/Assgin1/nbproject/private/configs/Run_in_Browser.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Assiagments/Java/Assgin1/nbproject/private/private.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Assiagments/Java/Assgin1/nbproject/private/private.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Assiagments/Java/Assgin1/nbproject/private/retriever/catalog.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Assiagments/Java/Assgin1/nbproject/project.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Assiagments/Java/Assgin1/nbproject/project.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Assiagments/Java/Assgin1/src/assignment1/Address.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Assiagments/Java/Assgin1/src/assignment1/Course.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Assiagments/Java/Assgin1/src/assignment1/FXMLDocument.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Assiagments/Java/Assgin1/src/assignment1/Student.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Assiagments/Java/Assgin1/src/assignment1/StudentListEditor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Assiagments/Java/Assgin1/src/assignment1/StudentStorage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Assiagments/Java/Assgin1/test/assgin1/AddressTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Assiagments/Java/Assgin1/test/assgin1/CourseTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Assiagments/Java/Assgin1/test/assgin1/StudentStorageTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Assiagments/Java/Assgin1/test/assgin1/StudentTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Assiagments/Java/AssiagnmentN1/src/assiagnmentn1/FXMLDocument.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Assiagments/Java/AssiagnmentN1/src/assiagnmentn1/FXMLDocumentController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Assiagments/Java/AssiagnmentN1/src/assiagnmentn1/StudentListEditor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Assiagments/Java/JavaFXApplication4/build.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Assiagments/Java/JavaFXApplication4/build/built-jar.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Assiagments/Java/JavaFXApplication4/build/classes/tutorial/pkg6/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Assiagments/Java/JavaFXApplication4/dist/JavaFXApplication4.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Assiagments/Java/JavaFXApplication4/dist/JavaFXApplication4.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Assiagments/Java/JavaFXApplication4/dist/JavaFXApplication4.jnlp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Assiagments/Java/JavaFXApplication4/dist/web-files/dtjava.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Assiagments/Java/JavaFXApplication4/dist/web-files/error.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Assiagments/Java/JavaFXApplication4/dist/web-files/get_java.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Assiagments/Java/JavaFXApplication4/dist/web-files/get_javafx.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Assiagments/Java/JavaFXApplication4/dist/web-files/javafx-chrome.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Assiagments/Java/JavaFXApplication4/dist/web-files/javafx-loading-100x100.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Assiagments/Java/JavaFXApplication4/dist/web-files/javafx-loading-25x25.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Assiagments/Java/JavaFXApplication4/dist/web-files/upgrade_java.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Assiagments/Java/JavaFXApplication4/dist/web-files/upgrade_javafx.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Assiagments/Java/JavaFXApplication4/manifest.mf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Assiagments/Java/JavaFXApplication4/nbproject/build-impl.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Assiagments/Java/JavaFXApplication4/nbproject/configs/Run_as_WebStart.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Assiagments/Java/JavaFXApplication4/nbproject/configs/Run_in_Browser.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Assiagments/Java/JavaFXApplication4/nbproject/genfiles.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Assiagments/Java/JavaFXApplication4/nbproject/jfx-impl.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Assiagments/Java/JavaFXApplication4/nbproject/private/configs/Run_as_WebStart.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Assiagments/Java/JavaFXApplication4/nbproject/private/configs/Run_in_Browser.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Assiagments/Java/JavaFXApplication4/nbproject/private/private.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Assiagments/Java/JavaFXApplication4/nbproject/private/private.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Assiagments/Java/JavaFXApplication4/nbproject/project.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Assiagments/Java/JavaFXApplication4/nbproject/project.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Assiagments/Java/JavaFXApplication4/src/tutorial/pkg6/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Assiagments/Scala/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Assiagments/Scala/Assignment2/.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Assiagments/Scala/Assignment2/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Assiagments/Scala/Assignment2/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Assiagments/Scala/Assignment2/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Assiagments/Scala/Assignment2/Assignment2-1.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Assiagments/Scala/Assignment2/out/production/Assignment2-1/assignment2/GameTree$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Assiagments/Scala/Assignment2/out/production/Assignment2-1/assignment2/GameTree$Game$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Assiagments/Scala/Assignment2/out/production/Assignment2-1/assignment2/GameTree$Game.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Assiagments/Scala/Assignment2/out/production/Assignment2-1/assignment2/GameTree$Tree$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Assiagments/Scala/Assignment2/out/production/Assignment2-1/assignment2/GameTree$Tree.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Assiagments/Scala/Assignment2/out/production/Assignment2-1/assignment2/GameTree.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Assiagments/Scala/Assignment2/out/production/Assignment2-1/assignment2/Main$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Assiagments/Scala/Assignment2/out/production/Assignment2-1/assignment2/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Assiagments/Scala/Assignment2/out/production/Assignment2-1/assignment2/Reversi$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Assiagments/Scala/Assignment2/out/production/Assignment2-1/assignment2/Reversi$Piece$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Assiagments/Scala/Assignment2/out/production/Assignment2-1/assignment2/Reversi$Piece.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Assiagments/Scala/Assignment2/out/production/Assignment2-1/assignment2/Reversi$Player.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Assiagments/Scala/Assignment2/out/production/Assignment2-1/assignment2/Reversi$PlayerBlack$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Assiagments/Scala/Assignment2/out/production/Assignment2-1/assignment2/Reversi$PlayerWhite$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Assiagments/Scala/Assignment2/out/production/Assignment2-1/assignment2/Reversi.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Assiagments/Scala/Assignment2/src/GameTree.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Assiagments/Scala/Assignment2/src/Main.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Assiagments/Scala/Assignment2/src/Reversi.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/Tutorial 1/Loopy.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/Tutorial 1/Loopy/build.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/Tutorial 1/Loopy/build/built-jar.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/Tutorial 1/Loopy/build/classes/.netbeans_automatic_build" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/Tutorial 1/Loopy/build/classes/.netbeans_update_resources" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/Tutorial 1/Loopy/build/classes/loopy/Loopy.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/Tutorial 1/Loopy/dist/Loopy.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/Tutorial 1/Loopy/dist/README.TXT" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/Tutorial 1/Loopy/manifest.mf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/Tutorial 1/Loopy/nbproject/build-impl.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/Tutorial 1/Loopy/nbproject/genfiles.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/Tutorial 1/Loopy/nbproject/private/private.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/Tutorial 1/Loopy/nbproject/private/private.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/Tutorial 1/Loopy/nbproject/project.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/Tutorial 1/Loopy/nbproject/project.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/Tutorial 1/Loopy/src/loopy/Loopy.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/Tutorial 1/Loopy/src/loopy/Loopy.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/Tutorial 1/Tutorial 1 - Java Syntax.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/Tutorial 1/Tutorial 1 Submission.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/Tutorial 1/Tutorial 1 Submission/Loopy/Loopy.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/Tutorial 1/Tutorial 1 Submission/Loopy/Loopy.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/Tutorial 1/Tutorial 1 Submission/Loopy/Loopy.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/Tutorial 1/Tutorial 1 Submission/Sum/Numbers.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/Tutorial 1/Tutorial 1 Submission/Sum/Sum.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/Tutorial 1/Tutorial 1 Submission/Sum/Sum.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/Tutorial 1/Tutorial 1 Submission/Sum/Sum.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/Tutorial 1/Tutorial 1 Submission/village/Person.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/Tutorial 1/Tutorial 1 Submission/village/Village.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/Tutorial 1/Tutorial 1 Submission/village/Village.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/Tutorial 1/Tutorial 1 Submission/village/Village.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/Tutorial 1/Tutorial 1-20190303T221929Z-001 (2).zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/Tutorial 1/Tutorial 1-20190303T221929Z-001 (2)/Tutorial 1-20190303T221929Z-001/Tutorial 1/Loopy.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/Tutorial 1/Tutorial 1-20190303T221929Z-001 (2)/Tutorial 1-20190303T221929Z-001/Tutorial 1/Loopy/build.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/Tutorial 1/Tutorial 1-20190303T221929Z-001 (2)/Tutorial 1-20190303T221929Z-001/Tutorial 1/Loopy/build/built-jar.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/Tutorial 1/Tutorial 1-20190303T221929Z-001 (2)/Tutorial 1-20190303T221929Z-001/Tutorial 1/Loopy/build/classes/.netbeans_automatic_build" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/Tutorial 1/Tutorial 1-20190303T221929Z-001 (2)/Tutorial 1-20190303T221929Z-001/Tutorial 1/Loopy/build/classes/.netbeans_update_resources" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/Tutorial 1/Tutorial 1-20190303T221929Z-001 (2)/Tutorial 1-20190303T221929Z-001/Tutorial 1/Loopy/build/classes/loopy/Loopy.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/Tutorial 1/Tutorial 1-20190303T221929Z-001 (2)/Tutorial 1-20190303T221929Z-001/Tutorial 1/Loopy/dist/Loopy.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/Tutorial 1/Tutorial 1-20190303T221929Z-001 (2)/Tutorial 1-20190303T221929Z-001/Tutorial 1/Loopy/dist/README.TXT" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/Tutorial 1/Tutorial 1-20190303T221929Z-001 (2)/Tutorial 1-20190303T221929Z-001/Tutorial 1/Loopy/manifest.mf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/Tutorial 1/Tutorial 1-20190303T221929Z-001 (2)/Tutorial 1-20190303T221929Z-001/Tutorial 1/Loopy/nbproject/build-impl.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/Tutorial 1/Tutorial 1-20190303T221929Z-001 (2)/Tutorial 1-20190303T221929Z-001/Tutorial 1/Loopy/nbproject/genfiles.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/Tutorial 1/Tutorial 1-20190303T221929Z-001 (2)/Tutorial 1-20190303T221929Z-001/Tutorial 1/Loopy/nbproject/private/private.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/Tutorial 1/Tutorial 1-20190303T221929Z-001 (2)/Tutorial 1-20190303T221929Z-001/Tutorial 1/Loopy/nbproject/private/private.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/Tutorial 1/Tutorial 1-20190303T221929Z-001 (2)/Tutorial 1-20190303T221929Z-001/Tutorial 1/Loopy/nbproject/project.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/Tutorial 1/Tutorial 1-20190303T221929Z-001 (2)/Tutorial 1-20190303T221929Z-001/Tutorial 1/Loopy/nbproject/project.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/Tutorial 1/Tutorial 1-20190303T221929Z-001 (2)/Tutorial 1-20190303T221929Z-001/Tutorial 1/Loopy/src/loopy/Loopy.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/Tutorial 1/Tutorial 1-20190303T221929Z-001 (2)/Tutorial 1-20190303T221929Z-001/Tutorial 1/Numbers.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/Tutorial 1/Tutorial 1-20190303T221929Z-001 (2)/Tutorial 1-20190303T221929Z-001/Tutorial 1/Sum/build.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/Tutorial 1/Tutorial 1-20190303T221929Z-001 (2)/Tutorial 1-20190303T221929Z-001/Tutorial 1/Sum/build/built-jar.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/Tutorial 1/Tutorial 1-20190303T221929Z-001 (2)/Tutorial 1-20190303T221929Z-001/Tutorial 1/Sum/build/classes/.netbeans_automatic_build" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/Tutorial 1/Tutorial 1-20190303T221929Z-001 (2)/Tutorial 1-20190303T221929Z-001/Tutorial 1/Sum/build/classes/.netbeans_update_resources" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/Tutorial 1/Tutorial 1-20190303T221929Z-001 (2)/Tutorial 1-20190303T221929Z-001/Tutorial 1/Sum/build/classes/sum/Numbers.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/Tutorial 1/Tutorial 1-20190303T221929Z-001 (2)/Tutorial 1-20190303T221929Z-001/Tutorial 1/Sum/build/classes/sum/Sum.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/Tutorial 1/Tutorial 1-20190303T221929Z-001 (2)/Tutorial 1-20190303T221929Z-001/Tutorial 1/Sum/dist/README.TXT" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/Tutorial 1/Tutorial 1-20190303T221929Z-001 (2)/Tutorial 1-20190303T221929Z-001/Tutorial 1/Sum/dist/Sum.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/Tutorial 1/Tutorial 1-20190303T221929Z-001 (2)/Tutorial 1-20190303T221929Z-001/Tutorial 1/Sum/manifest.mf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/Tutorial 1/Tutorial 1-20190303T221929Z-001 (2)/Tutorial 1-20190303T221929Z-001/Tutorial 1/Sum/nbproject/build-impl.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/Tutorial 1/Tutorial 1-20190303T221929Z-001 (2)/Tutorial 1-20190303T221929Z-001/Tutorial 1/Sum/nbproject/genfiles.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/Tutorial 1/Tutorial 1-20190303T221929Z-001 (2)/Tutorial 1-20190303T221929Z-001/Tutorial 1/Sum/nbproject/private/private.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/Tutorial 1/Tutorial 1-20190303T221929Z-001 (2)/Tutorial 1-20190303T221929Z-001/Tutorial 1/Sum/nbproject/private/private.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/Tutorial 1/Tutorial 1-20190303T221929Z-001 (2)/Tutorial 1-20190303T221929Z-001/Tutorial 1/Sum/nbproject/project.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/Tutorial 1/Tutorial 1-20190303T221929Z-001 (2)/Tutorial 1-20190303T221929Z-001/Tutorial 1/Sum/nbproject/project.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/Tutorial 1/Tutorial 1-20190303T221929Z-001 (2)/Tutorial 1-20190303T221929Z-001/Tutorial 1/Sum/src/sum/Numbers.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/Tutorial 1/Tutorial 1-20190303T221929Z-001 (2)/Tutorial 1-20190303T221929Z-001/Tutorial 1/Sum/src/sum/Sum.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/Tutorial 1/Tutorial 1-20190303T221929Z-001 (2)/Tutorial 1-20190303T221929Z-001/Tutorial 1/Tutorial 1 - Java Syntax.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/Tutorial 1/Tutorial 1-20190303T221929Z-001 (2)/Tutorial 1-20190303T221929Z-001/Tutorial 1/Village.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/Tutorial 1/Tutorial 1-20190303T221929Z-001 (2)/Tutorial 1-20190303T221929Z-001/Tutorial 1/Village/build.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/Tutorial 1/Tutorial 1-20190303T221929Z-001 (2)/Tutorial 1-20190303T221929Z-001/Tutorial 1/Village/build/built-jar.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/Tutorial 1/Tutorial 1-20190303T221929Z-001 (2)/Tutorial 1-20190303T221929Z-001/Tutorial 1/Village/build/classes/village/Person.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/Tutorial 1/Tutorial 1-20190303T221929Z-001 (2)/Tutorial 1-20190303T221929Z-001/Tutorial 1/Village/build/classes/village/Village.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/Tutorial 1/Tutorial 1-20190303T221929Z-001 (2)/Tutorial 1-20190303T221929Z-001/Tutorial 1/Village/dist/README.TXT" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/Tutorial 1/Tutorial 1-20190303T221929Z-001 (2)/Tutorial 1-20190303T221929Z-001/Tutorial 1/Village/dist/Village.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/Tutorial 1/Tutorial 1-20190303T221929Z-001 (2)/Tutorial 1-20190303T221929Z-001/Tutorial 1/Village/manifest.mf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/Tutorial 1/Tutorial 1-20190303T221929Z-001 (2)/Tutorial 1-20190303T221929Z-001/Tutorial 1/Village/nbproject/build-impl.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/Tutorial 1/Tutorial 1-20190303T221929Z-001 (2)/Tutorial 1-20190303T221929Z-001/Tutorial 1/Village/nbproject/genfiles.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/Tutorial 1/Tutorial 1-20190303T221929Z-001 (2)/Tutorial 1-20190303T221929Z-001/Tutorial 1/Village/nbproject/private/private.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/Tutorial 1/Tutorial 1-20190303T221929Z-001 (2)/Tutorial 1-20190303T221929Z-001/Tutorial 1/Village/nbproject/private/private.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/Tutorial 1/Tutorial 1-20190303T221929Z-001 (2)/Tutorial 1-20190303T221929Z-001/Tutorial 1/Village/nbproject/project.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/Tutorial 1/Tutorial 1-20190303T221929Z-001 (2)/Tutorial 1-20190303T221929Z-001/Tutorial 1/Village/nbproject/project.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/Tutorial 1/Tutorial 1-20190303T221929Z-001 (2)/Tutorial 1-20190303T221929Z-001/Tutorial 1/Village/src/village/Village.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/Tutorial 1/Tutorial 1-20190303T221929Z-001 (2)/Tutorial 1-20190303T221929Z-001/Tutorial 1/~$torial 1 - Java Syntax.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/Tutorial 1/Village.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/Tutorial 1/Village/build.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/Tutorial 1/Village/build/classes/.netbeans_automatic_build" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/Tutorial 1/Village/build/classes/.netbeans_update_resources" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/Tutorial 1/Village/build/classes/village/Person.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/Tutorial 1/Village/build/classes/village/Village.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/Tutorial 1/Village/build/classes/village/Village.rs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/Tutorial 1/Village/manifest.mf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/Tutorial 1/Village/nbproject/build-impl.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/Tutorial 1/Village/nbproject/genfiles.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/Tutorial 1/Village/nbproject/private/private.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/Tutorial 1/Village/nbproject/private/private.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/Tutorial 1/Village/nbproject/project.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/Tutorial 1/Village/nbproject/project.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/Tutorial 1/Village/src/village/Village.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/Tutorial 2/Tutorial 2.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/Tutorial 2/tutorial2.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/Tutorial 2/tutorial2/build.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/Tutorial 2/tutorial2/build/classes/.netbeans_automatic_build" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/Tutorial 2/tutorial2/build/classes/.netbeans_update_resources" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/Tutorial 2/tutorial2/build/classes/fd34e21dbca023879f35bc1d7e042508.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/Tutorial 2/tutorial2/build/classes/tutorial2.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/Tutorial 2/tutorial2/build/classes/tutorial2/Exterminator$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/Tutorial 2/tutorial2/build/classes/tutorial2/Exterminator$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/Tutorial 2/tutorial2/build/classes/tutorial2/Exterminator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/Tutorial 2/tutorial2/build/classes/tutorial2/Spray.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/Tutorial 2/tutorial2/build/classes/tutorial2/Wasp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/Tutorial 2/tutorial2/build/classes/tutorial2/flyspray.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/Tutorial 2/tutorial2/build/classes/tutorial2/hive.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/Tutorial 2/tutorial2/build/classes/tutorial2/wasp.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/Tutorial 2/tutorial2/manifest.mf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/Tutorial 2/tutorial2/nbproject/build-impl.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/Tutorial 2/tutorial2/nbproject/genfiles.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/Tutorial 2/tutorial2/nbproject/private/config.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/Tutorial 2/tutorial2/nbproject/private/private.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/Tutorial 2/tutorial2/nbproject/private/private.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/Tutorial 2/tutorial2/nbproject/project.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/Tutorial 2/tutorial2/nbproject/project.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/Tutorial 2/tutorial2/src/fd34e21dbca023879f35bc1d7e042508.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/Tutorial 2/tutorial2/src/tutorial2.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/Tutorial 2/tutorial2/src/tutorial2/Exterminator$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/Tutorial 2/tutorial2/src/tutorial2/Exterminator$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/Tutorial 2/tutorial2/src/tutorial2/Exterminator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/Tutorial 2/tutorial2/src/tutorial2/Exterminator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/Tutorial 2/tutorial2/src/tutorial2/Spray.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/Tutorial 2/tutorial2/src/tutorial2/Spray.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/Tutorial 2/tutorial2/src/tutorial2/Wasp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/Tutorial 2/tutorial2/src/tutorial2/Wasp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/Tutorial 2/tutorial2/src/tutorial2/flyspray.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/Tutorial 2/tutorial2/src/tutorial2/hive.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/Tutorial 2/tutorial2/src/tutorial2/wasp.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/Tutorial 3/Tutorial 3.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/Tutorial 3/UML Diagram.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/Tutorial 3/tutorial3.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/Tutorial 3/tutorial3/.classpath" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/Tutorial 3/tutorial3/.project" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/Tutorial 3/tutorial3/bin/reserve/Eagle.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/Tutorial 3/tutorial3/bin/reserve/Lion.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/Tutorial 3/tutorial3/bin/reserve/Meerkat.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/Tutorial 3/tutorial3/bin/reserve/Reserve$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/Tutorial 3/tutorial3/bin/reserve/Reserve.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/Tutorial 3/tutorial3/bin/reserve/Zebra.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/Tutorial 3/tutorial3/build.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/Tutorial 3/tutorial3/build/built-jar.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/Tutorial 3/tutorial3/build/classes/.netbeans_automatic_build" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/Tutorial 3/tutorial3/build/classes/.netbeans_update_resources" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/Tutorial 3/tutorial3/build/classes/AbstractClasses/Animal.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/Tutorial 3/tutorial3/build/classes/AbstractClasses/Hunters.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/Tutorial 3/tutorial3/build/classes/AbstractClasses/Prey.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/Tutorial 3/tutorial3/build/classes/Animals/Eagle.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/Tutorial 3/tutorial3/build/classes/Animals/Lion.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/Tutorial 3/tutorial3/build/classes/Animals/Meerkat.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/Tutorial 3/tutorial3/build/classes/Animals/Zebra.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/Tutorial 3/tutorial3/build/classes/Main/Reserve$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/Tutorial 3/tutorial3/build/classes/Main/Reserve.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/Tutorial 3/tutorial3/dist/README.TXT" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/Tutorial 3/tutorial3/dist/tutorial3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/Tutorial 3/tutorial3/images/Thumbs.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/Tutorial 3/tutorial3/images/dog.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/Tutorial 3/tutorial3/images/eagle.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/Tutorial 3/tutorial3/images/lion.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/Tutorial 3/tutorial3/images/meerkat.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/Tutorial 3/tutorial3/images/zebra.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/Tutorial 3/tutorial3/manifest.mf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/Tutorial 3/tutorial3/nbproject/build-impl.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/Tutorial 3/tutorial3/nbproject/genfiles.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/Tutorial 3/tutorial3/nbproject/private/private.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/Tutorial 3/tutorial3/nbproject/private/private.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/Tutorial 3/tutorial3/nbproject/project.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/Tutorial 3/tutorial3/nbproject/project.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/Tutorial 3/tutorial3/src/AbstractClasses/Animal.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/Tutorial 3/tutorial3/src/AbstractClasses/Hunters.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/Tutorial 3/tutorial3/src/AbstractClasses/Prey.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/Tutorial 3/tutorial3/src/Animals/Eagle.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/Tutorial 3/tutorial3/src/Animals/Lion.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/Tutorial 3/tutorial3/src/Animals/Meerkat.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/Tutorial 3/tutorial3/src/Animals/Zebra.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/Tutorial 3/tutorial3/src/Main/Reserve.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/Tutorial 3/tutorial3student.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/Tutorial 3/tutorial3student/tutorial3/.classpath" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/Tutorial 3/tutorial3student/tutorial3/.project" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/Tutorial 3/tutorial3student/tutorial3/bin/reserve/Eagle.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/Tutorial 3/tutorial3student/tutorial3/bin/reserve/Lion.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/Tutorial 3/tutorial3student/tutorial3/bin/reserve/Meerkat.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/Tutorial 3/tutorial3student/tutorial3/bin/reserve/Reserve$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/Tutorial 3/tutorial3student/tutorial3/bin/reserve/Reserve.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/Tutorial 3/tutorial3student/tutorial3/bin/reserve/Zebra.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/Tutorial 3/tutorial3student/tutorial3/images/Thumbs.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/Tutorial 3/tutorial3student/tutorial3/images/eagle.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/Tutorial 3/tutorial3student/tutorial3/images/lion.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/Tutorial 3/tutorial3student/tutorial3/images/meerkat.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/Tutorial 3/tutorial3student/tutorial3/images/zebra.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/Tutorial 3/tutorial3student/tutorial3/src/reserve/Eagle.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/Tutorial 3/tutorial3student/tutorial3/src/reserve/Lion.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/Tutorial 3/tutorial3student/tutorial3/src/reserve/Meerkat.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/Tutorial 3/tutorial3student/tutorial3/src/reserve/Reserve.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/Tutorial 3/tutorial3student/tutorial3/src/reserve/Zebra.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/Tutorial 3/tutorialUML/Class Diagrams/Multi-package class diagram 2019.03.18 18-51-32.cdg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/Tutorial 3/tutorialUML/umlproject" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/Tutorial 4/Errors being thrown and handled.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/Tutorial 4/Main Output.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/Tutorial 4/build.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/Tutorial 4/build/classes/.netbeans_automatic_build" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/Tutorial 4/build/classes/.netbeans_update_resources" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/Tutorial 4/build/classes/comparers/compareByFirstName.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/Tutorial 4/build/classes/comparers/compareById.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/Tutorial 4/build/classes/comparers/compareByLastName.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/Tutorial 4/build/classes/comparers/compareByMajor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/Tutorial 4/build/classes/comparers/compareByProgramme.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/Tutorial 4/build/classes/tutorial4/CSVSorter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/Tutorial 4/build/classes/tutorial4/Student.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/Tutorial 4/build/classes/tutorial4/students.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/Tutorial 4/manifest.mf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/Tutorial 4/nbproject/build-impl.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/Tutorial 4/nbproject/genfiles.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/Tutorial 4/nbproject/private/private.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/Tutorial 4/nbproject/project.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/Tutorial 4/nbproject/project.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/Tutorial 4/src/comparers/compareByFirstName.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/Tutorial 4/src/comparers/compareByFirstName.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/Tutorial 4/src/comparers/compareById.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/Tutorial 4/src/comparers/compareById.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/Tutorial 4/src/comparers/compareByLastName.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/Tutorial 4/src/comparers/compareByLastName.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/Tutorial 4/src/comparers/compareByMajor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/Tutorial 4/src/comparers/compareByMajor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/Tutorial 4/src/comparers/compareByProgramme.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/Tutorial 4/src/comparers/compareByProgramme.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/Tutorial 4/src/tutorial4/CSVSorter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/Tutorial 4/src/tutorial4/CSVSorter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/Tutorial 4/src/tutorial4/Student.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/Tutorial 4/src/tutorial4/Student.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/Tutorial 4/src/tutorial4/students.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/Tutorial 4/tutorial4.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/Tutorial 5/.idea/Tutorial 5.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/Tutorial 5/.idea/externalDependencies.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/Tutorial 5/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/Tutorial 5/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/Tutorial 5/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/Tutorial 5/Tutorial 5.7z" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/Tutorial 5/Tutorial 5/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/Tutorial 5/Tutorial 5/.idea/libraries/KotlinJavaRuntime.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/Tutorial 5/Tutorial 5/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/Tutorial 5/Tutorial 5/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/Tutorial 5/Tutorial 5/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/Tutorial 5/Tutorial 5/Tutorial 5.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/Tutorial 5/Tutorial 5/out/production/Tutorial 5/tutorial5/ExtendedArrayList.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/Tutorial 5/Tutorial 5/out/production/Tutorial 5/tutorial5/SimpleList.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/Tutorial 5/Tutorial 5/out/production/Tutorial 5/tutorial5tests/ExtendedArrayListTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/Tutorial 5/Tutorial 5/out/production/Tutorial 5/tutorial5tests/SimpleListTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/Tutorial 5/tutorial5.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/Tutorial 5/tutorial5/.classpath" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/Tutorial 5/tutorial5/.project" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/Tutorial 5/tutorial5/.settings/org.eclipse.jdt.core.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/Tutorial 5/tutorial5/bin/tutorial5/ExtendedArrayList.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/Tutorial 5/tutorial5/bin/tutorial5/SimpleList.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/Tutorial 5/tutorial5/bin/tutorial5tests/ExtendedArrayListTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/Tutorial 5/tutorial5/bin/tutorial5tests/SimpleListTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/Tutorial 5/tutorial5/src/tutorial5/ExtendedArrayList.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/Tutorial 5/tutorial5/src/tutorial5/SimpleList.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/Tutorial 5/tutorial5/src/tutorial5tests/ExtendedArrayListTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/Tutorial 5/tutorial5/src/tutorial5tests/SimpleListTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/Tutorial 6/Tutorial 6.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/Tutorial 6/build.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/Tutorial 6/build/built-jar.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/Tutorial 6/build/classes/tutorial/pkg6/Person.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/Tutorial 6/build/classes/tutorial/pkg6/tutorial6.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/Tutorial 6/dist/Tutorial 6.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/Tutorial 6/dist/Tutorial 6.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/Tutorial 6/dist/Tutorial 6.jnlp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/Tutorial 6/dist/web-files/dtjava.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/Tutorial 6/dist/web-files/error.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/Tutorial 6/dist/web-files/get_java.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/Tutorial 6/dist/web-files/get_javafx.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/Tutorial 6/dist/web-files/javafx-chrome.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/Tutorial 6/dist/web-files/javafx-loading-100x100.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/Tutorial 6/dist/web-files/javafx-loading-25x25.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/Tutorial 6/dist/web-files/upgrade_java.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/Tutorial 6/dist/web-files/upgrade_javafx.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/Tutorial 6/manifest.mf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/Tutorial 6/nbproject/UPDATED.TXT" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/Tutorial 6/nbproject/build-impl.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/Tutorial 6/nbproject/configs/Run_as_WebStart.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/Tutorial 6/nbproject/configs/Run_in_Browser.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/Tutorial 6/nbproject/genfiles.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/Tutorial 6/nbproject/jfx-impl.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/Tutorial 6/nbproject/jfx-impl_backup.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/Tutorial 6/nbproject/private/configs/Run_as_WebStart.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/Tutorial 6/nbproject/private/configs/Run_in_Browser.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/Tutorial 6/nbproject/private/private.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/Tutorial 6/nbproject/private/private.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/Tutorial 6/nbproject/project.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/Tutorial 6/nbproject/project.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/Tutorial 6/src/tutorial/pkg6/Person.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/Tutorial 6/src/tutorial/pkg6/tutorial6.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/test/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/test/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/test/out/production/test/test.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/test/src/Solution.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Java Tutorial/test/test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Scala Tutorial/.idea/Scala Tutorial.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Scala Tutorial/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Scala Tutorial/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Scala Tutorial/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Scala Tutorial/Tutorial 1/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Scala Tutorial/Tutorial 1/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Scala Tutorial/Tutorial 1/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Scala Tutorial/Tutorial 1/Tutorial 1.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Scala Tutorial/Tutorial 1/out/production/Tutorial 1/tutorial1$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Scala Tutorial/Tutorial 1/out/production/Tutorial 1/tutorial1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Scala Tutorial/Tutorial 1/src/tutorial1.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Scala Tutorial/Tutorial 2/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Scala Tutorial/Tutorial 2/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Scala Tutorial/Tutorial 2/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Scala Tutorial/Tutorial 2/Tutorial 2.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Scala Tutorial/Tutorial 2/out/production/Tutorial 2/foo.sc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Scala Tutorial/Tutorial 2/out/production/Tutorial 2/tutorial2$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Scala Tutorial/Tutorial 2/out/production/Tutorial 2/tutorial2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Scala Tutorial/Tutorial 2/src/foo.sc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Scala Tutorial/Tutorial 2/src/tutorial2.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Scala Tutorial/Tutorial 3/Computational Thinking.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Scala Tutorial/Tutorial 3/Computational Thinking_files/MainBook.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Scala Tutorial/Tutorial 3/Computational Thinking_files/MathJax.js.download" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Scala Tutorial/Tutorial 3/Tutorial 3.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Scala Tutorial/Tutorial 3/Tutorial3/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Scala Tutorial/Tutorial 3/Tutorial3/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Scala Tutorial/Tutorial 3/Tutorial3/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Scala Tutorial/Tutorial 3/Tutorial3/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Scala Tutorial/Tutorial 3/Tutorial3/Tutorial3.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Scala Tutorial/Tutorial 3/Tutorial3/out/production/Tutorial3/foo.sc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Scala Tutorial/Tutorial 3/Tutorial3/out/production/Tutorial3/tutorial3$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Scala Tutorial/Tutorial 3/Tutorial3/out/production/Tutorial3/tutorial3$Ace$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Scala Tutorial/Tutorial 3/Tutorial3/out/production/Tutorial3/tutorial3$Bid.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Scala Tutorial/Tutorial 3/Tutorial3/out/production/Tutorial3/tutorial3$BinOp$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Scala Tutorial/Tutorial 3/Tutorial3/out/production/Tutorial3/tutorial3$BinOp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Scala Tutorial/Tutorial 3/Tutorial3/out/production/Tutorial3/tutorial3$Card$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Scala Tutorial/Tutorial 3/Tutorial3/out/production/Tutorial3/tutorial3$Card.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Scala Tutorial/Tutorial 3/Tutorial3/out/production/Tutorial3/tutorial3$Club$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Scala Tutorial/Tutorial 3/Tutorial3/out/production/Tutorial3/tutorial3$Deuce$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Scala Tutorial/Tutorial 3/Tutorial3/out/production/Tutorial3/tutorial3$Diamond$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Scala Tutorial/Tutorial 3/Tutorial3/out/production/Tutorial3/tutorial3$Eight$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Scala Tutorial/Tutorial 3/Tutorial3/out/production/Tutorial3/tutorial3$Expr.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Scala Tutorial/Tutorial 3/Tutorial3/out/production/Tutorial3/tutorial3$FaceValue.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Scala Tutorial/Tutorial 3/Tutorial3/out/production/Tutorial3/tutorial3$Five$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Scala Tutorial/Tutorial 3/Tutorial3/out/production/Tutorial3/tutorial3$Four$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Scala Tutorial/Tutorial 3/Tutorial3/out/production/Tutorial3/tutorial3$Heart$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Scala Tutorial/Tutorial 3/Tutorial3/out/production/Tutorial3/tutorial3$Jack$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Scala Tutorial/Tutorial 3/Tutorial3/out/production/Tutorial3/tutorial3$King$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Scala Tutorial/Tutorial 3/Tutorial3/out/production/Tutorial3/tutorial3$Nine$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Scala Tutorial/Tutorial 3/Tutorial3/out/production/Tutorial3/tutorial3$NoTrump$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Scala Tutorial/Tutorial 3/Tutorial3/out/production/Tutorial3/tutorial3$Number$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Scala Tutorial/Tutorial 3/Tutorial3/out/production/Tutorial3/tutorial3$Number.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Scala Tutorial/Tutorial 3/Tutorial3/out/production/Tutorial3/tutorial3$OpBid$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Scala Tutorial/Tutorial 3/Tutorial3/out/production/Tutorial3/tutorial3$OpBid.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Scala Tutorial/Tutorial 3/Tutorial3/out/production/Tutorial3/tutorial3$Pass$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Scala Tutorial/Tutorial 3/Tutorial3/out/production/Tutorial3/tutorial3$Queen$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Scala Tutorial/Tutorial 3/Tutorial3/out/production/Tutorial3/tutorial3$Seven$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Scala Tutorial/Tutorial 3/Tutorial3/out/production/Tutorial3/tutorial3$Six$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Scala Tutorial/Tutorial 3/Tutorial3/out/production/Tutorial3/tutorial3$Spade$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Scala Tutorial/Tutorial 3/Tutorial3/out/production/Tutorial3/tutorial3$Suit.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Scala Tutorial/Tutorial 3/Tutorial3/out/production/Tutorial3/tutorial3$TClub$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Scala Tutorial/Tutorial 3/Tutorial3/out/production/Tutorial3/tutorial3$TDiamond$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Scala Tutorial/Tutorial 3/Tutorial3/out/production/Tutorial3/tutorial3$THeart$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Scala Tutorial/Tutorial 3/Tutorial3/out/production/Tutorial3/tutorial3$TSpade$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Scala Tutorial/Tutorial 3/Tutorial3/out/production/Tutorial3/tutorial3$Ten$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Scala Tutorial/Tutorial 3/Tutorial3/out/production/Tutorial3/tutorial3$Three$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Scala Tutorial/Tutorial 3/Tutorial3/out/production/Tutorial3/tutorial3$Trumps.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Scala Tutorial/Tutorial 3/Tutorial3/out/production/Tutorial3/tutorial3$UnOp$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Scala Tutorial/Tutorial 3/Tutorial3/out/production/Tutorial3/tutorial3$UnOp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Scala Tutorial/Tutorial 3/Tutorial3/out/production/Tutorial3/tutorial3$Var$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Scala Tutorial/Tutorial 3/Tutorial3/out/production/Tutorial3/tutorial3$Var.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Scala Tutorial/Tutorial 3/Tutorial3/out/production/Tutorial3/tutorial3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Scala Tutorial/Tutorial 3/Tutorial3/src/foo.sc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../159272 Programming Paradigms/Tutorials/Scala Tutorial/Tutorial 3/Tutorial3/src/tutorial3.scala" beforeDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FileEditorManager">
-    <leaf />
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
   </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
       <list>
-        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="FxmlFile" />
+        <option value="Class" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="97" />
-    <option name="y" value="-9" />
-    <option name="width" value="1612" />
-    <option name="height" value="876" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../../.." />
   </component>
-  <component name="ProjectView">
-    <navigator proportions="" version="1">
-      <foldersAlwaysOnTop value="true" />
-    </navigator>
-    <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="maventext" type="b2602c69:ProjectViewProjectNode" />
-              <item name="251-assignment1-sam-jurgen" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="maventext" type="b2602c69:ProjectViewProjectNode" />
-              <item name="251-assignment1-sam-jurgen" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="maventext" type="b2602c69:ProjectViewProjectNode" />
-              <item name="251-assignment1-sam-jurgen" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="maventext" type="b2602c69:ProjectViewProjectNode" />
-              <item name="251-assignment1-sam-jurgen" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-    </panes>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="F:\Projects\Massey\Second Year\Semester 2\159251 Software Engineering Design and Construction\Assignments\Assignment 1\.idea" />
+      </set>
+    </option>
   </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="1" />
+  </component>
+  <component name="ProjectConfigurationFiles">
+    <option name="files">
+      <list>
+        <option value="$PROJECT_DIR$/.idea/.gitignore" />
+        <option value="$PROJECT_DIR$/.idea/vcs.xml" />
+        <option value="$PROJECT_DIR$/.idea/compiler.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1PP6siKIiux0pYmS62mDLNZ7InI" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
-    <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/src/main/java" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\Projects\Massey\Second Year\Semester 2\159251 Software Engineering Design and Construction\Assignments\Assignment 1\src\main\java\sample" />
+      <recent name="F:\Projects\Massey\Second Year\Semester 2\159251 Software Engineering Design and Construction\Assignments\Assignment 1\src\main\java\ui" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -81,131 +632,29 @@
       </list>
     </option>
   </component>
-  <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <layout>
-      <window_info id="Favorites" side_tool="true" />
-      <window_info id="Designer" />
-      <window_info id="Learn" weight="0.32995737" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17537314" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="ConsoleMavenPlugin" />
-      <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Palette&#9;" />
-      <window_info anchor="right" id="Maven" />
-      <window_info anchor="right" id="Maven-2 Build" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-    </layout>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="src.Main" />
+      <module name="maven-text" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
   </component>
-  <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/251-assignment1-sam-jurgen.iml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-  </component>
-  <component name="masterDetails">
-    <states>
-      <state key="ArtifactsStructureConfigurable.UI">
-        <settings>
-          <artifact-editor />
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="FacetStructureConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="GlobalLibrariesConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="JdkListConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ModuleStructureConfigurable.UI">
-        <settings>
-          <last-edited>251-assignment1-sam-jurgen</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-                <option value="0.6" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ProjectJDKs.UI">
-        <settings>
-          <last-edited>1.8</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ProjectLibrariesConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-    </states>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

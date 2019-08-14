@@ -1,0 +1,29 @@
+Things that we will need to plan out:
+
+Assignment Doc: https://docs.google.com/document/d/1bkOATqob7ppA0bl015S6donv_HlgN6zzUAz0pVW9YAE/edit
+
+What repo server we going to use (BitBucket, Github, etc)
+    - GitLab
+
+What we want to use as an issure tracker
+    - GitLab
+
+What libraries we gonna use (Swing, JavaFX, ect)
+    - JavaFX
+    - ODF
+
+How we're gonna deal with the work load (split it up or do kind of a peer programing thing) and figure out who wants to do what
+    - Wait for UML
+
+What features we want in the system out of the box (This is after the base functionalities are working)
+    
+
+How we're gonna design it (Using UML or maybe something else?)
+    - UML
+
+Coding conventions (spacing, curly brace placement and other semantics)
+    - Tabbed (4 spaces)
+    - New line braces
+
+IDE and compiler (NetBeans, Eclipse also Gradle or Maven)
+    - Both using IntelliJ
