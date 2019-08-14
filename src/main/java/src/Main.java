@@ -13,21 +13,31 @@ public class Main extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception{
+        // primaryStage Stuff
         primaryStage.setTitle("Untitled - Ultimate Text Editor 9000");
         BorderPane layout = new BorderPane();
         Scene scene = new Scene(layout, 500, 800);
+
+        // Menu
+        MenuMain menu = new MenuMain();
+
 
 
 
 
         // Layouts for borderpane - feel free to change
+        // Top BorderPane
         VBox topPane = new VBox();
-        topPane.getChildren().addAll(new MenuMain().getMenu());
+        topPane.getChildren().addAll(menu.getMenu());
 
+        // Bottom BorderPane
         VBox bottomPane = new VBox();
+        // Left BorderPane
         VBox leftPane = new VBox();
+        // Right BorderPane
         VBox rightPane = new VBox();
 
+        // Layout Setters
         layout.setTop(topPane);
         layout.setBottom(bottomPane);
         layout.setLeft(leftPane);
