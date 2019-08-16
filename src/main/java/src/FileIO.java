@@ -13,17 +13,44 @@ public class FileIO
         // Setting up file chooser
         FileChooser fileChooser = new FileChooser();
         fileChooser.setTitle("Open a File");
-        fileChooser.getExtensionFilters().add(new FileChooser.ExtensionFilter("Text Files", "*.txt"));
+        fileChooser.getExtensionFilters().add(
+            new FileChooser.ExtensionFilter("Text Files", "*.txt"));
+
         File selectedFile = fileChooser.showOpenDialog(null);
         String fileExtension = selectedFile.getName().split("\\.")[1];
 
         // Select correct loader for file type, docx to be implemented later
-        if(fileExtension.equals("txt"))
+        if (fileExtension.equals("txt"))
         {
             return OpenText(selectedFile);
-        }
-        else{
+        } else
+        {
             return "";
+        }
+    }
+
+    protected void Save(String text)
+    {
+        FileChooser fileChooser = new FileChooser();
+        fileChooser.setTitle("Save File");
+        fileChooser.getExtensionFilters().add(
+            new FileChooser.ExtensionFilter("Text Files", "*.txt"));
+
+        File selectedFile = fileChooser.showSaveDialog(null);
+
+        // Requirements only need .txt saving, if more file formats are supported the following should be spun off to
+        // another method
+
+        try
+        {
+            System.out.println(text);
+            FileWriter fileWriter = new FileWriter(selectedFile);
+            BufferedWriter writer = new BufferedWriter(fileWriter);
+            writer.write(text);
+            writer.close();
+        } catch (IOException e)
+        {
+            e.printStackTrace();
         }
     }
 
@@ -35,7 +62,8 @@ public class FileIO
         {
             String curLine = reader.readLine();
 
-            while(curLine != null){
+            while (curLine != null)
+            {
                 text.append(curLine).append("\n");
                 curLine = reader.readLine();
             }
