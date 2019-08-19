@@ -25,7 +25,8 @@ public class Main extends Application
         Scene scene = new Scene(layout, 500, 800);
 
         // Menu
-        MenuMain menu = new MenuMain();
+        HeaderMenu menu = new HeaderMenu();
+
 
         // Editor
         CodeArea editor = new CodeArea();

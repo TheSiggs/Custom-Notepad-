@@ -17,7 +17,7 @@ import javafx.scene.text.Text;
 import javafx.stage.Stage;
 import org.fxmisc.richtext.CodeArea;
 
-public class MenuMain
+public class HeaderMenu
 {
 
     private MenuBar menu;
@@ -28,7 +28,7 @@ public class MenuMain
     private Menu helpMenu;
     private MenuItem about;
 
-    public MenuMain()
+    public HeaderMenu()
     {
         this.menu = new MenuBar();
         this.fileMenu = new Menu("File");
