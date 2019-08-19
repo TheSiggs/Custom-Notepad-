@@ -1,6 +1,8 @@
 package src;
 
 import javafx.application.Application;
+import javafx.application.Platform;
+import javafx.concurrent.Task;
 import javafx.scene.Scene;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.VBox;
@@ -33,6 +35,27 @@ public class Main extends Application
 
         // Footer
         FooterMenu footer = new FooterMenu();
+        // Updates carret location every 100 milliseconds
+        Task task = new Task<Void>() {
+            @Override
+            public Void call() throws Exception {
+                int i = 0;
+                while (true) {
+                    final int finalI = i;
+                    Platform.runLater(new Runnable() {
+                        @Override
+                        public void run() {
+                            footer.setCurserLocation(editor.getCurrentParagraph(), editor.getCaretColumn());
+                        }
+                    });
+                    i++;
+                    Thread.sleep(100);
+                }
+            }
+        };
+        Thread th = new Thread(task);
+        th.setDaemon(true);
+        th.start();
 
         // Layouts for borderpane - feel free to change
         // Top BorderPane
