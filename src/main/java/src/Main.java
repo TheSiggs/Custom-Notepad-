@@ -27,10 +27,12 @@ public class Main extends Application
         // Menu
         HeaderMenu menu = new HeaderMenu();
 
-
         // Editor
         CodeArea editor = new CodeArea();
         editor.setParagraphGraphicFactory(LineNumberFactory.get(editor));
+
+        // Footer
+        FooterMenu footer = new FooterMenu();
 
         // Layouts for borderpane - feel free to change
         // Top BorderPane
@@ -38,6 +40,7 @@ public class Main extends Application
         topPane.getChildren().addAll(menu.getMenu());
         // Bottom BorderPane
         VBox bottomPane = new VBox();
+        bottomPane.getChildren().addAll(footer.getFooter());
         // Left BorderPane
         VBox leftPane = new VBox();
         // Right BorderPane
