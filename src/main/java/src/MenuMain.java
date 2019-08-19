@@ -40,7 +40,7 @@ public class MenuMain
         openFile.setOnAction(event ->
         {
             String toSet = new FileIO().Open(getEditor().getScene().getWindow());
-            if(toSet == null)
+            if (toSet == null)
             {
                 return;
             }
