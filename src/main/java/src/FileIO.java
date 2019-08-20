@@ -5,13 +5,6 @@ import javafx.stage.FileChooser;
 import javafx.stage.Window;
 import org.apache.tika.Tika;
 import org.apache.tika.exception.TikaException;
-import org.apache.tika.metadata.Metadata;
-import org.apache.tika.parser.AutoDetectParser;
-import org.apache.tika.parser.ParseContext;
-import org.apache.tika.parser.opendocument.OpenOfficeParser;
-import org.apache.tika.sax.BodyContentHandler;
-import org.bouncycastle.asn1.cms.MetaData;
-import org.xml.sax.SAXException;
 
 import java.io.*;
 
@@ -26,19 +19,28 @@ public class FileIO
         fileChooser.setTitle("Open a File");
         fileChooser.getExtensionFilters().addAll(
             new FileChooser.ExtensionFilter("Text Files", "*.txt"),
-            new FileChooser.ExtensionFilter("OpenOffice Documents", "*.odt"));
+            new FileChooser.ExtensionFilter("OpenOffice Text", "*.odt"),
+            new FileChooser.ExtensionFilter("All", "*.*"));
 
         File selectedFile = fileChooser.showOpenDialog(window);
 
-        Tika tika = new Tika();
-
-        try (InputStream is = new FileInputStream(selectedFile))
+        // If user presses cancel or closes dialog return null to cancel loading process
+        if(selectedFile == null)
         {
-            return tika.parseToString(is);
-        } catch (IOException | TikaException e){ // TODO: Proper error handling
-
+            return null;
         }
-        return "";
+
+
+        try(InputStream is = new FileInputStream(selectedFile);){
+            Tika tika = new Tika();
+            return tika.parseToString(is);
+        } catch (IOException | TikaException e){
+            Alert alert = new Alert(Alert.AlertType.ERROR);
+            alert.setTitle("Error attempting to load file");
+            alert.setContentText(e.getMessage());
+            alert.showAndWait();
+            return null;
+        }
     }
 
     protected void Save(String text, Window window)  // Needs to change to bool if save-on-change feature implemented
