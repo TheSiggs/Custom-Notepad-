@@ -4,8 +4,9 @@ import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.geometry.Insets;
 import javafx.geometry.Pos;
-import javafx.scene.Node;
-import javafx.scene.Parent;
+import javafx.print.JobSettings;
+import javafx.print.PageLayout;
+import javafx.print.PrinterJob;
 import javafx.scene.Scene;
 import javafx.scene.control.Label;
 import javafx.scene.control.Menu;
@@ -17,6 +18,7 @@ import javafx.scene.text.Text;
 import javafx.stage.Stage;
 import org.fxmisc.richtext.CodeArea;
 
+
 public class HeaderMenu
 {
 
@@ -25,6 +27,7 @@ public class HeaderMenu
     private MenuItem newFile;
     private MenuItem openFile;
     private MenuItem saveFile;
+    private MenuItem printFile;
     private Menu helpMenu;
     private MenuItem about;
 
@@ -35,10 +38,11 @@ public class HeaderMenu
         this.newFile = new MenuItem("New");
         this.openFile = new MenuItem("Open");
         this.saveFile = new MenuItem("Save");
+        this.printFile = new MenuItem("Print");
         this.helpMenu = new Menu("Help");
         this.about = new MenuItem("About");
 
-        fileMenu.getItems().addAll(newFile, openFile, saveFile);
+        fileMenu.getItems().addAll(newFile, openFile, saveFile, printFile);
         helpMenu.getItems().addAll(about);
         menu.getMenus().addAll(fileMenu, helpMenu);
 
@@ -73,27 +77,40 @@ public class HeaderMenu
             new FileIO().Save(getEditor().getText(), getEditor().getScene().getWindow());
         });
 
-        about.setOnAction(new EventHandler<ActionEvent>() {
-            public void handle(ActionEvent event) {
-                try {
+        printFile.setOnAction(event ->
+        {
+            Print print = new Print(getEditor().getText());
+
+            if(print.setPrintSettings())
+            {
+                print.print();
+            }
+        });
+
+        about.setOnAction(new EventHandler<ActionEvent>()
+        {
+            public void handle(ActionEvent event)
+            {
+                try
+                {
                     VBox root = new VBox();
                     root.setAlignment(Pos.TOP_CENTER);
                     Label title = new Label("Ultimate Text Editor 9000");
                     title.setFont(new Font(20.0));
-                    title.setPadding(new Insets(10,0,5,0));
+                    title.setPadding(new Insets(10, 0, 5, 0));
                     Label createdBy = new Label("Creators:\nJurgen\nSam Siggs");
                     createdBy.setFont(new Font(12.0));
                     Label description = new Label("breif message");
-                    description.setPadding(new Insets(10,0,0,0));
+                    description.setPadding(new Insets(10, 0, 0, 0));
 
                     root.getChildren().addAll(title, createdBy, description);
-
 
                     Stage stage = new Stage();
                     stage.setTitle("Ultimate Text Editor 9000");
                     stage.setScene(new Scene(root, 325, 150));
                     stage.show();
-                } catch (Exception e) {
+                } catch (Exception e)
+                {
                     e.printStackTrace();
                 }
             }
