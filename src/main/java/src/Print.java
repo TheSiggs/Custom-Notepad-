@@ -8,6 +8,7 @@ import javafx.print.PrinterJob;
 import javafx.scene.text.Font;
 import javafx.scene.text.Text;
 import javafx.scene.text.TextFlow;
+import javafx.stage.Window;
 
 import java.util.ArrayList;
 
@@ -25,9 +26,10 @@ public class Print
         this.printer = PrinterJob.createPrinterJob();
     }
 
-    public boolean setPrintSettings()
+    public boolean setPrintSettings(Window window)
     {
-        if (printer.showPageSetupDialog(null))
+
+        if (printer.showPageSetupDialog(window))
         {
             this.pHeight = printer.getJobSettings().getPageLayout().getPrintableHeight();
             this.pWidth = printer.getJobSettings().getPageLayout().getPrintableWidth();
@@ -38,12 +40,12 @@ public class Print
         }
     }
 
-    public void print()
+    public void print(Window window)
     {
         buildDoc();
         PageRange pageRange = new PageRange(1, toPrint.length);
         printer.getJobSettings().setPageRanges(pageRange);
-        if (printer.showPrintDialog(null))
+        if (printer.showPrintDialog(window))
 
         {
             boolean sPrint = false;
@@ -52,30 +54,34 @@ public class Print
             {
                 for (int p = pr.getStartPage(); p <= pr.getEndPage(); p++)
                 {
-                    TextFlow printArea = new TextFlow(new Text(toPrint[p - 1]));
+                    Text page = new Text(toPrint[p - 1]);
+                    page.setFont(Font.font("System", 11));
+                    TextFlow printArea = new TextFlow(page);
                     printArea.setPrefHeight(layout.getPrintableHeight());
                     printArea.setPrefWidth(layout.getPrintableWidth());
 
                     sPrint = printer.printPage(layout, printArea);
 
-                    if(!sPrint)
+                    if (!sPrint)
                     {
                         //TODO: error message
                         break;
                     }
                 }
             }
-            if(sPrint) printer.endJob();
+            if (sPrint) printer.endJob();
         }
 
     }
 
     private void buildDoc()
     {
-        Font font = new Font("System", 12);
+        // Set up font metrics
+        Font font = new Font("System", 11);
         FontMetrics fm = Toolkit.getToolkit().getFontLoader().getFontMetrics(font);
 
-        int pageLines = (int) pHeight / (int) fm.getLineHeight();
+        // Use font metrics to calculate how many lines there are
+        double pageLines = pHeight / fm.getLineHeight();
 
         String[] uncheckedLines = text.split("\n");
         ArrayList<String> paginatedDocs = new ArrayList<>();
@@ -87,7 +93,7 @@ public class Print
 
         for (String toTest : uncheckedLines)
         {
-            if ((int) fm.computeStringWidth(toTest) <= pWidth)
+            if ((int) fm.computeStringWidth(toTest) < pWidth)
             {
                 currentPage.append(toTest).append("\n");
                 lineNumber++;
@@ -107,7 +113,7 @@ public class Print
                         buildingLine.setLength(0);
                         lineNumber++;
 
-                        if (lineNumber == pageLines)
+                        if (lineNumber == (int) pageLines)
                         {
                             paginatedDocs.add(pageNumber, currentPage.toString());
                             currentPage.setLength(0);
@@ -118,7 +124,7 @@ public class Print
                 }
                 currentPage.append("\n");
             }
-            if (lineNumber == pageLines)
+            if (lineNumber == (int) pageLines)
             {
                 paginatedDocs.add(pageNumber, currentPage.toString());
                 currentPage.setLength(0);

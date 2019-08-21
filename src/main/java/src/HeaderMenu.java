@@ -4,9 +4,6 @@ import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.geometry.Insets;
 import javafx.geometry.Pos;
-import javafx.print.JobSettings;
-import javafx.print.PageLayout;
-import javafx.print.PrinterJob;
 import javafx.scene.Scene;
 import javafx.scene.control.Label;
 import javafx.scene.control.Menu;
@@ -14,7 +11,6 @@ import javafx.scene.control.MenuBar;
 import javafx.scene.control.MenuItem;
 import javafx.scene.layout.*;
 import javafx.scene.text.Font;
-import javafx.scene.text.Text;
 import javafx.stage.Stage;
 import org.fxmisc.richtext.CodeArea;
 
@@ -80,10 +76,11 @@ public class HeaderMenu
         printFile.setOnAction(event ->
         {
             Print print = new Print(getEditor().getText());
+            System.out.println();
 
-            if(print.setPrintSettings())
+            if (print.setPrintSettings(getEditor().getScene().getWindow()))
             {
-                print.print();
+                print.print(getEditor().getScene().getWindow());
             }
         });
 
