@@ -75,12 +75,10 @@ public class HeaderMenu
 
         printFile.setOnAction(event ->
         {
-            Print print = new Print(getEditor().getText());
-            System.out.println();
-
+            Print print = new Print();
             if (print.setPrintSettings(getEditor().getScene().getWindow()))
             {
-                print.print(getEditor().getScene().getWindow());
+                print.print(getEditor().getScene().getWindow(), getEditor().getText());
             }
         });
 
