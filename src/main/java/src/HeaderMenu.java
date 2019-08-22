@@ -11,8 +11,12 @@ import javafx.scene.control.MenuBar;
 import javafx.scene.control.MenuItem;
 import javafx.scene.layout.*;
 import javafx.scene.text.Font;
+import javafx.stage.FileChooser;
 import javafx.stage.Stage;
 import org.fxmisc.richtext.CodeArea;
+
+import java.io.File;
+import java.io.IOException;
 
 
 public class HeaderMenu
@@ -24,6 +28,7 @@ public class HeaderMenu
     private MenuItem openFile;
     private MenuItem saveFile;
     private MenuItem printFile;
+    private MenuItem exportFile;
     private Menu helpMenu;
     private MenuItem about;
 
@@ -35,10 +40,11 @@ public class HeaderMenu
         this.openFile = new MenuItem("Open");
         this.saveFile = new MenuItem("Save");
         this.printFile = new MenuItem("Print");
+        this.exportFile = new MenuItem("Export as PDF");
         this.helpMenu = new Menu("Help");
         this.about = new MenuItem("About");
 
-        fileMenu.getItems().addAll(newFile, openFile, saveFile, printFile);
+        fileMenu.getItems().addAll(newFile, openFile, saveFile, printFile, exportFile);
         helpMenu.getItems().addAll(about);
         menu.getMenus().addAll(fileMenu, helpMenu);
 
@@ -108,6 +114,20 @@ public class HeaderMenu
                 {
                     e.printStackTrace();
                 }
+            }
+        });
+
+        exportFile.setOnAction(event ->
+        {
+            Export export = new Export();
+            FileChooser fileChooser = new FileChooser();
+            File file =  fileChooser.showSaveDialog(getEditor().getScene().getWindow());
+            try
+            {
+                export.writePDF(getEditor().getText(), file);
+            } catch (IOException e)
+            {
+                e.printStackTrace();
             }
         });
     }
