@@ -1,5 +1,8 @@
 package src;
 
+import javafx.animation.Animation;
+import javafx.animation.KeyFrame;
+import javafx.animation.Timeline;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.geometry.Insets;
@@ -10,41 +13,74 @@ import javafx.scene.layout.*;
 import javafx.scene.text.Font;
 import javafx.stage.FileChooser;
 import javafx.stage.Stage;
+import javafx.util.Duration;
 import org.apache.tika.exception.TikaException;
 import org.fxmisc.richtext.CodeArea;
 
 import java.io.File;
 import java.io.IOException;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 
 
 public class HeaderMenu
 {
 
-    private MenuBar menu;
-    private Menu fileMenu;
+    private MenuBar menu; // Parent Menu
+
+    private Menu fileMenu; // File Menu
     private MenuItem newFile;
     private MenuItem openFile;
     private MenuItem saveFile;
     private MenuItem printFile;
     private MenuItem exportFile;
-    private Menu helpMenu;
+
+    private Menu searchMenu; // Search Menu
+    private Menu viewMenu; // View Menu
+    private Menu managemenu; //Menu
+
+    private Menu helpMenu; // Help Menu
     private MenuItem about;
+
+    private Menu time; //Clock
+
 
     public HeaderMenu()
     {
+        // Parent Menu
         this.menu = new MenuBar();
+        // File Menu
         this.fileMenu = new Menu("File");
         this.newFile = new MenuItem("New");
         this.openFile = new MenuItem("Open");
         this.saveFile = new MenuItem("Save");
         this.printFile = new MenuItem("Print");
         this.exportFile = new MenuItem("Export as PDF");
+        // Search Menu
+        this.searchMenu = new Menu("Search");
+        // View Menu
+        this.viewMenu = new Menu("View");
+        // Manage Menu
+        this.managemenu = new Menu("Manage");
+        // Help Menu
         this.helpMenu = new Menu("Help");
         this.about = new MenuItem("About");
+        // Time "Menu"
+        this.time = new Menu();
 
+        // Child Menu Assignments
         fileMenu.getItems().addAll(newFile, openFile, saveFile, printFile, exportFile);
         helpMenu.getItems().addAll(about);
-        menu.getMenus().addAll(fileMenu, helpMenu);
+        // Parent Menu Node Assignment
+        menu.getMenus().addAll(fileMenu, searchMenu, viewMenu, managemenu, helpMenu, time);
+
+        // Clock checks the system time once every second
+        Timeline dateTime = new Timeline(new KeyFrame(Duration.ZERO, e -> {
+            DateTimeFormatter formatter = DateTimeFormatter.ofPattern("HH:mm:ss dd/MM/yyyy");
+            time.setText(LocalDateTime.now().format(formatter));
+        }), new KeyFrame(Duration.seconds(1)));
+        dateTime.setCycleCount(Animation.INDEFINITE);
+        dateTime.play();
 
         // Setting actions
         newFile.setOnAction(event ->
@@ -59,7 +95,6 @@ public class HeaderMenu
 
         openFile.setOnAction(event ->
         {
-
             FileChooser fileChooser = new FileChooser();
             fileChooser.setTitle("Open a File");
             fileChooser.getExtensionFilters().addAll(

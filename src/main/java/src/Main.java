@@ -26,7 +26,7 @@ public class Main extends Application
         BorderPane layout = new BorderPane();
         Scene scene = new Scene(layout, 500, 800);
 
-        // Menu
+        // Header
         HeaderMenu menu = new HeaderMenu();
 
         // Editor
