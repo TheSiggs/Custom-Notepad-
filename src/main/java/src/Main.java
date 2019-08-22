@@ -31,6 +31,7 @@ public class Main extends Application
 
         // Editor
         CodeArea editor = new CodeArea();
+        editor.setWrapText(true);
         editor.setParagraphGraphicFactory(LineNumberFactory.get(editor));
 
         // Footer
