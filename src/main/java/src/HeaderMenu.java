@@ -5,14 +5,12 @@ import javafx.event.EventHandler;
 import javafx.geometry.Insets;
 import javafx.geometry.Pos;
 import javafx.scene.Scene;
-import javafx.scene.control.Label;
-import javafx.scene.control.Menu;
-import javafx.scene.control.MenuBar;
-import javafx.scene.control.MenuItem;
+import javafx.scene.control.*;
 import javafx.scene.layout.*;
 import javafx.scene.text.Font;
 import javafx.stage.FileChooser;
 import javafx.stage.Stage;
+import org.apache.tika.exception.TikaException;
 import org.fxmisc.richtext.CodeArea;
 
 import java.io.File;
@@ -61,9 +59,32 @@ public class HeaderMenu
 
         openFile.setOnAction(event ->
         {
-            String toSet = new FileIO().Open(getEditor().getScene().getWindow());
-            if (toSet == null)
+
+            FileChooser fileChooser = new FileChooser();
+            fileChooser.setTitle("Open a File");
+            fileChooser.getExtensionFilters().addAll(
+                new FileChooser.ExtensionFilter("Text Files", "*.txt"),
+                new FileChooser.ExtensionFilter("OpenOffice Text", "*.odt"),
+                new FileChooser.ExtensionFilter("All", "*.*"));
+
+            File selectedFile = fileChooser.showOpenDialog(getEditor().getScene().getWindow());
+
+            // If user presses cancel or closes dialog return null to cancel loading process
+            if(selectedFile == null)
             {
+                return;
+            }
+
+            String toSet = null;
+            try
+            {
+                toSet = new FileIO().Open(selectedFile);
+            } catch (IOException | TikaException e)
+            {
+                Alert alert = new Alert(Alert.AlertType.ERROR);
+                alert.setTitle("Error attempting to load file");
+                alert.setContentText(e.getMessage());
+                alert.showAndWait();
                 return;
             }
 
@@ -76,7 +97,28 @@ public class HeaderMenu
 
         saveFile.setOnAction(event ->
         {
-            new FileIO().Save(getEditor().getText(), getEditor().getScene().getWindow());
+            // Setting up file chooser
+            FileChooser fileChooser = new FileChooser();
+            fileChooser.setTitle("Save File");
+            fileChooser.getExtensionFilters().add(
+                new FileChooser.ExtensionFilter("Text Files", "*.txt"));
+
+            File selectedFile = fileChooser.showSaveDialog(getEditor().getScene().getWindow());
+
+            if (selectedFile == null)
+            {
+                return;
+            }
+            try
+            {
+                new FileIO().Save(getEditor().getText(), selectedFile);
+            } catch (IOException e)
+            {
+                Alert alert = new Alert(Alert.AlertType.ERROR);
+                alert.setTitle("Error attempting to save");
+                alert.setContentText(e.getMessage());
+                alert.showAndWait();
+            }
         });
 
         printFile.setOnAction(event ->
