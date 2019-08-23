@@ -7,6 +7,7 @@ import javafx.scene.Scene;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
+import org.fxmisc.flowless.VirtualizedScrollPane;
 import org.fxmisc.richtext.CodeArea;
 import org.fxmisc.richtext.LineNumberFactory;
 
@@ -29,11 +30,13 @@ public class Main extends Application
         // Header
         HeaderMenu menu = new HeaderMenu();
 
+
+
         // Editor
         CodeArea editor = new CodeArea();
         editor.setWrapText(true);
         editor.setParagraphGraphicFactory(LineNumberFactory.get(editor));
-
+        
         // Footer
         FooterMenu footer = new FooterMenu();
         // Updates carret location every 100 milliseconds
@@ -71,7 +74,7 @@ public class Main extends Application
         VBox rightPane = new VBox();
 
         // Layout Setters
-        layout.setCenter(editor);
+        layout.setCenter(new VirtualizedScrollPane<>(editor));
         layout.setTop(topPane);
         layout.setBottom(bottomPane);
         layout.setLeft(leftPane);

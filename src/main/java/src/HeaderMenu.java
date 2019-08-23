@@ -15,6 +15,7 @@ import javafx.stage.FileChooser;
 import javafx.stage.Stage;
 import javafx.util.Duration;
 import org.apache.tika.exception.TikaException;
+import org.fxmisc.flowless.VirtualizedScrollPane;
 import org.fxmisc.richtext.CodeArea;
 import org.xml.sax.SAXException;
 
@@ -219,6 +220,7 @@ public class HeaderMenu
     private CodeArea getEditor()
     {
         BorderPane bp = (BorderPane) menu.getParent().getParent();
-        return (CodeArea) bp.getCenter();
+        VirtualizedScrollPane sp = (VirtualizedScrollPane) bp.getCenter();
+        return (CodeArea) sp.getContent();
     }
 }
