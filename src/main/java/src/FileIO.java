@@ -1,17 +1,22 @@
 package src;
 
 import org.apache.tika.Tika;
+import org.apache.tika.config.TikaConfig;
 import org.apache.tika.exception.TikaException;
-
+import org.xml.sax.SAXException;
 import java.io.*;
+
 
 public class FileIO
 {
 
-    protected String Open(File file) throws IOException, TikaException
+    protected String Open(File file) throws IOException, TikaException, SAXException
     {
+        // Loading a config to suppress the optional warnings for OCR and SQL dependencies, which are not used
+        File tikaConf = new File(FileIO.class.getResource("tika-config.xml").getFile());
+        TikaConfig config = new TikaConfig(tikaConf);
         InputStream is = new FileInputStream(file);
-        Tika tika = new Tika();
+        Tika tika = new Tika(config);
         return tika.parseToString(is);
 
     }

@@ -16,6 +16,7 @@ import javafx.stage.Stage;
 import javafx.util.Duration;
 import org.apache.tika.exception.TikaException;
 import org.fxmisc.richtext.CodeArea;
+import org.xml.sax.SAXException;
 
 import java.io.File;
 import java.io.IOException;
@@ -114,7 +115,7 @@ public class HeaderMenu
             try
             {
                 toSet = new FileIO().Open(selectedFile);
-            } catch (IOException | TikaException e)
+            } catch (IOException | TikaException | SAXException e)
             {
                 Alert alert = new Alert(Alert.AlertType.ERROR);
                 alert.setTitle("Error attempting to load file");
