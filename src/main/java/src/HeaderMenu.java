@@ -1,5 +1,7 @@
 package src;
 
+import javafx.beans.value.ChangeListener;
+import javafx.beans.value.ObservableValue;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.geometry.Insets;
@@ -7,13 +9,17 @@ import javafx.geometry.Pos;
 import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.scene.layout.*;
+import javafx.scene.paint.Color;
 import javafx.scene.text.Font;
 import javafx.stage.FileChooser;
 import javafx.stage.Stage;
+import javafx.stage.StageStyle;
 import org.apache.tika.exception.TikaException;
 import org.fxmisc.flowless.VirtualizedScrollPane;
 import org.fxmisc.richtext.CodeArea;
+import org.fxmisc.richtext.NavigationActions;
 import org.xml.sax.SAXException;
+
 import java.io.File;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
@@ -208,11 +214,88 @@ public class HeaderMenu
         editMenu.setOnAction(event ->
         {
             StringBuilder insert = new StringBuilder();
-            SimpleDateFormat timeFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss z");;
+            SimpleDateFormat timeFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss z");
+            ;
             Date dateTime = new Date(System.currentTimeMillis());
             insert.append(timeFormat.format(dateTime)).append("\n");
             getEditor().insertText(0, insert.toString());
 
+        });
+
+        findSearch.setOnAction(event ->
+        {
+
+            CodeArea editor = getEditor();
+            Search search = new Search();
+
+            // Create containers and controls
+            VBox root = new VBox();
+            HBox topRow = new HBox();
+            HBox bottomRow = new HBox();
+            TextField matchEntry = new TextField();
+            Button searchButton = new Button();
+            Button nextResult = new Button();
+            Label numFound = new Label();
+
+            //Set control text
+            searchButton.setText("Search");
+            nextResult.setText("Next");
+            numFound.setText("");
+
+            // Set layout settings
+            root.setAlignment(Pos.CENTER);
+            topRow.setAlignment(Pos.TOP_CENTER);
+            bottomRow.setAlignment(Pos.BOTTOM_CENTER);
+            root.setSpacing(10);
+            topRow.setSpacing(6);
+            bottomRow.setSpacing(6);
+
+            // Set a listener to update search when user changes text in search dialog, display the numbner of results
+            // below the textfield and button
+            matchEntry.textProperty().addListener(new ChangeListener<String>()
+            {
+                @Override
+                public void changed(ObservableValue<? extends String> observable, String oldValue, String newValue)
+                {
+                    search.updateMatch(newValue, editor.getText());
+                    int found = search.getResultNum();
+                    if (found > 0)
+                    {
+                        numFound.setTextFill(Color.BLACK);
+                        numFound.setText(found + " match(es) found");
+                    } else
+                    {
+                        numFound.setTextFill(Color.RED);
+                        numFound.setText("No matches found");
+                    }
+                }
+            });
+
+            // Go to the next result
+            nextResult.setOnAction(event1 ->
+            {
+                int[] pos = search.nextPosition(new int[]{editor.getCurrentParagraph(), editor.getCaretColumn()});
+                if (pos != null) // Guard against nullpointer if no results exist
+                {
+                    // Move the caret to highlight the word and set the editor to follow the caret
+                    getEditor().moveTo(pos[0], pos[1]);
+                    getEditor().moveTo(pos[0], pos[1] + pos[2], NavigationActions.SelectionPolicy.ADJUST);
+                    getEditor().requestFollowCaret();
+                }
+            });
+
+            // Add the controls to containers
+            topRow.getChildren().addAll(matchEntry, nextResult);
+            bottomRow.getChildren().addAll(numFound);
+            root.getChildren().addAll(topRow, bottomRow);
+
+            // Set the stage and display
+            Stage stage = new Stage();
+            stage.setTitle("Find Text");
+            stage.setScene(new Scene(root, 240, 80));
+            stage.initStyle(StageStyle.UTILITY);
+            stage.setAlwaysOnTop(true);
+            stage.show();
         });
     }
 
