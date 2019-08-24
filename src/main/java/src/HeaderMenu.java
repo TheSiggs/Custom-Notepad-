@@ -1,8 +1,5 @@
 package src;
 
-import javafx.animation.Animation;
-import javafx.animation.KeyFrame;
-import javafx.animation.Timeline;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.geometry.Insets;
@@ -13,16 +10,14 @@ import javafx.scene.layout.*;
 import javafx.scene.text.Font;
 import javafx.stage.FileChooser;
 import javafx.stage.Stage;
-import javafx.util.Duration;
 import org.apache.tika.exception.TikaException;
 import org.fxmisc.flowless.VirtualizedScrollPane;
 import org.fxmisc.richtext.CodeArea;
 import org.xml.sax.SAXException;
-
 import java.io.File;
 import java.io.IOException;
-import java.time.LocalDateTime;
-import java.time.format.DateTimeFormatter;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 
 
 public class HeaderMenu
@@ -37,7 +32,11 @@ public class HeaderMenu
     private MenuItem printFile;
     private MenuItem exportFile;
 
+    private Menu editMenu;
+    private MenuItem timeEdit;
+
     private Menu searchMenu; // Search Menu
+    private MenuItem findSearch;
     private Menu viewMenu; // View Menu
     private Menu managemenu; //Menu
 
@@ -58,8 +57,12 @@ public class HeaderMenu
         this.saveFile = new MenuItem("Save");
         this.printFile = new MenuItem("Print");
         this.exportFile = new MenuItem("Export as PDF");
+        // Edit Menu
+        this.editMenu = new Menu("Edit");
+        this.timeEdit = new MenuItem("Insert Time and Date");
         // Search Menu
         this.searchMenu = new Menu("Search");
+        this.findSearch = new MenuItem("Find");
         // View Menu
         this.viewMenu = new Menu("View");
         // Manage Menu
@@ -67,22 +70,14 @@ public class HeaderMenu
         // Help Menu
         this.helpMenu = new Menu("Help");
         this.about = new MenuItem("About");
-        // Time "Menu"
-        this.time = new Menu();
 
         // Child Menu Assignments
         fileMenu.getItems().addAll(newFile, openFile, saveFile, printFile, exportFile);
+        editMenu.getItems().addAll(timeEdit);
         helpMenu.getItems().addAll(about);
+        searchMenu.getItems().addAll(findSearch);
         // Parent Menu Node Assignment
-        menu.getMenus().addAll(fileMenu, searchMenu, viewMenu, managemenu, helpMenu, time);
-
-        // Clock checks the system time once every second
-        Timeline dateTime = new Timeline(new KeyFrame(Duration.ZERO, e -> {
-            DateTimeFormatter formatter = DateTimeFormatter.ofPattern("HH:mm:ss dd/MM/yyyy");
-            time.setText(LocalDateTime.now().format(formatter));
-        }), new KeyFrame(Duration.seconds(1)));
-        dateTime.setCycleCount(Animation.INDEFINITE);
-        dateTime.play();
+        menu.getMenus().addAll(fileMenu, editMenu, searchMenu, viewMenu, managemenu, helpMenu);
 
         // Setting actions
         newFile.setOnAction(event ->
@@ -107,7 +102,7 @@ public class HeaderMenu
             File selectedFile = fileChooser.showOpenDialog(getEditor().getScene().getWindow());
 
             // If user presses cancel or closes dialog return null to cancel loading process
-            if(selectedFile == null)
+            if (selectedFile == null)
             {
                 return;
             }
@@ -200,7 +195,7 @@ public class HeaderMenu
         {
             Export export = new Export();
             FileChooser fileChooser = new FileChooser();
-            File file =  fileChooser.showSaveDialog(getEditor().getScene().getWindow());
+            File file = fileChooser.showSaveDialog(getEditor().getScene().getWindow());
             try
             {
                 export.writePDF(getEditor().getText(), file);
@@ -208,6 +203,16 @@ public class HeaderMenu
             {
                 e.printStackTrace();
             }
+        });
+
+        editMenu.setOnAction(event ->
+        {
+            StringBuilder insert = new StringBuilder();
+            SimpleDateFormat timeFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss z");;
+            Date dateTime = new Date(System.currentTimeMillis());
+            insert.append(timeFormat.format(dateTime)).append("\n");
+            getEditor().insertText(0, insert.toString());
+
         });
     }
 
