@@ -10,7 +10,7 @@ import java.io.*;
 public class FileIO
 {
 
-    protected String Open(File file) throws IOException, TikaException, SAXException
+    public String Open(File file) throws IOException, TikaException, SAXException
     {
         // Loading a config to suppress the optional warnings for OCR and SQL dependencies, which are not used
         File tikaConf = new File(FileIO.class.getResource("tika-config.xml").getFile());
@@ -21,7 +21,7 @@ public class FileIO
 
     }
 
-    protected void Save(String text, File file) throws IOException  // Needs to change to bool if save-on-change feature implemented
+    public void Save(String text, File file) throws IOException  // Needs to change to bool if save-on-change feature implemented
     {
         System.out.println(text);
         FileWriter fileWriter = new FileWriter(file);
