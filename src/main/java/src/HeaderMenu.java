@@ -1,5 +1,6 @@
 package src;
 
+import javafx.application.Platform;
 import javafx.beans.value.ChangeListener;
 import javafx.beans.value.ObservableValue;
 import javafx.event.ActionEvent;
@@ -37,6 +38,7 @@ public class HeaderMenu
     private MenuItem saveFile;
     private MenuItem printFile;
     private MenuItem exportFile;
+    private MenuItem quitFile;
 
     private Menu editMenu;
     private MenuItem timeEdit;
@@ -63,6 +65,7 @@ public class HeaderMenu
         this.saveFile = new MenuItem("Save");
         this.printFile = new MenuItem("Print");
         this.exportFile = new MenuItem("Export as PDF");
+        this.quitFile = new MenuItem("Quit");
         // Edit Menu
         this.editMenu = new Menu("Edit");
         this.timeEdit = new MenuItem("Insert Time and Date");
@@ -78,7 +81,7 @@ public class HeaderMenu
         this.about = new MenuItem("About");
 
         // Child Menu Assignments
-        fileMenu.getItems().addAll(newFile, openFile, saveFile, printFile, exportFile);
+        fileMenu.getItems().addAll(newFile, openFile, saveFile, printFile, exportFile, quitFile);
         editMenu.getItems().addAll(timeEdit);
         helpMenu.getItems().addAll(about);
         searchMenu.getItems().addAll(findSearch);
@@ -296,6 +299,10 @@ public class HeaderMenu
             stage.initStyle(StageStyle.UTILITY);
             stage.setAlwaysOnTop(true);
             stage.show();
+        });
+
+        quitFile.setOnAction(event -> {
+            Platform.exit();
         });
     }
 
