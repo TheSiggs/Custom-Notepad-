@@ -19,11 +19,9 @@ import javafx.stage.Stage;
 import javafx.stage.StageStyle;
 import org.apache.tika.exception.TikaException;
 import org.fxmisc.flowless.VirtualizedScrollPane;
-import org.fxmisc.richtext.ClipboardActions;
 import org.fxmisc.richtext.CodeArea;
 import org.fxmisc.richtext.NavigationActions;
 import org.xml.sax.SAXException;
-
 import java.io.File;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
@@ -338,7 +336,7 @@ public class HeaderMenu
         pasteEdit.setOnAction(event ->
         {
             Clipboard clipboard = Clipboard.getSystemClipboard();
-            getEditor().insertText(getEditor().getCaretPosition(), clipboard.getString());
+            if(clipboard.getString() != null) getEditor().insertText(getEditor().getCaretPosition(), clipboard.toString());
         });
 
         undoEdit.setOnAction(event ->
