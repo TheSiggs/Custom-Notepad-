@@ -1,5 +1,4 @@
 import static org.junit.jupiter.api.Assertions.*;
-
 import org.apache.tika.exception.TikaException;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.io.TempDir;
@@ -44,5 +43,13 @@ public class ioTest
         File file = new File(tempDir.toFile(), "saveFile.txt");
         new FileIO().Save(newTest, file);
         assertEquals(new FileIO().Open(file), newTest + "\n");
+    }
+
+    @Test
+    void noFileTest() throws TikaException, SAXException
+    {
+        File file = new File("nonfile");
+        assertThrows(IOException.class,
+            () ->new FileIO().Open(file));
     }
 }
