@@ -9,6 +9,8 @@ import javafx.geometry.Insets;
 import javafx.geometry.Pos;
 import javafx.scene.Scene;
 import javafx.scene.control.*;
+import javafx.scene.input.Clipboard;
+import javafx.scene.input.ClipboardContent;
 import javafx.scene.layout.*;
 import javafx.scene.paint.Color;
 import javafx.scene.text.Font;
@@ -17,6 +19,7 @@ import javafx.stage.Stage;
 import javafx.stage.StageStyle;
 import org.apache.tika.exception.TikaException;
 import org.fxmisc.flowless.VirtualizedScrollPane;
+import org.fxmisc.richtext.ClipboardActions;
 import org.fxmisc.richtext.CodeArea;
 import org.fxmisc.richtext.NavigationActions;
 import org.xml.sax.SAXException;
@@ -42,6 +45,12 @@ public class HeaderMenu
 
     private Menu editMenu;
     private MenuItem timeEdit;
+    private MenuItem undoEdit;
+    private MenuItem redoEdit;
+    private MenuItem cutEdit;
+    private MenuItem copyEdit;
+    private MenuItem pasteEdit;
+
 
     private Menu searchMenu; // Search Menu
     private MenuItem findSearch;
@@ -69,6 +78,11 @@ public class HeaderMenu
         // Edit Menu
         this.editMenu = new Menu("Edit");
         this.timeEdit = new MenuItem("Insert Time and Date");
+        this.undoEdit = new MenuItem("Undo");
+        this.redoEdit = new MenuItem("Redo");
+        this.copyEdit = new MenuItem("Copy");
+        this.cutEdit = new MenuItem("Cut");
+        this.pasteEdit = new MenuItem("Paste");
         // Search Menu
         this.searchMenu = new Menu("Search");
         this.findSearch = new MenuItem("Find");
@@ -80,9 +94,13 @@ public class HeaderMenu
         this.helpMenu = new Menu("Help");
         this.about = new MenuItem("About");
 
+        // Setting undo/redo to unavailable
+        undoEdit.setDisable(true);
+        redoEdit.setDisable(true);
+
         // Child Menu Assignments
         fileMenu.getItems().addAll(newFile, openFile, saveFile, printFile, exportFile, quitFile);
-        editMenu.getItems().addAll(timeEdit);
+        editMenu.getItems().addAll(timeEdit, undoEdit, redoEdit, copyEdit, cutEdit, pasteEdit);
         helpMenu.getItems().addAll(about);
         searchMenu.getItems().addAll(findSearch);
         // Parent Menu Node Assignment
@@ -214,7 +232,7 @@ public class HeaderMenu
             }
         });
 
-        editMenu.setOnAction(event ->
+        timeEdit.setOnAction(event ->
         {
             StringBuilder insert = new StringBuilder();
             SimpleDateFormat timeFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss z");
@@ -301,8 +319,36 @@ public class HeaderMenu
             stage.show();
         });
 
-        quitFile.setOnAction(event -> {
+        quitFile.setOnAction(event ->
+        {
             Platform.exit();
+        });
+
+        copyEdit.setOnAction(event ->
+        {
+            toClipboard(getEditor().getSelectedText());
+        });
+
+        cutEdit.setOnAction(event ->
+        {
+            toClipboard(getEditor().getSelectedText());
+            getEditor().replaceSelection("");
+        });
+
+        pasteEdit.setOnAction(event ->
+        {
+            Clipboard clipboard = Clipboard.getSystemClipboard();
+            getEditor().insertText(getEditor().getCaretPosition(), clipboard.getString());
+        });
+
+        undoEdit.setOnAction(event ->
+        {
+            getEditor().undo();
+        });
+
+        redoEdit.setOnAction(event ->
+        {
+            getEditor().redo();
         });
     }
 
@@ -317,5 +363,11 @@ public class HeaderMenu
         BorderPane bp = (BorderPane) menu.getParent().getParent();
         VirtualizedScrollPane sp = (VirtualizedScrollPane) bp.getCenter();
         return (CodeArea) sp.getContent();
+    }
+
+    private void toClipboard(String string)
+    {
+        ClipboardContent content = new ClipboardContent();
+        content.putString(string);
     }
 }
