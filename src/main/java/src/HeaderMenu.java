@@ -17,6 +17,7 @@ import javafx.scene.text.Font;
 import javafx.stage.FileChooser;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
+import org.apache.commons.io.FilenameUtils;
 import org.apache.tika.exception.TikaException;
 import org.fxmisc.flowless.VirtualizedScrollPane;
 import org.fxmisc.richtext.CodeArea;
@@ -32,65 +33,41 @@ public class HeaderMenu
 {
 
     private MenuBar menu; // Parent Menu
+    private Stage mainStage;
 
-    private Menu fileMenu; // File Menu
-    private MenuItem newFile;
-    private MenuItem openFile;
-    private MenuItem saveFile;
-    private MenuItem printFile;
-    private MenuItem exportFile;
-    private MenuItem quitFile;
-
-    private Menu editMenu;
-    private MenuItem timeEdit;
-    private MenuItem undoEdit;
-    private MenuItem redoEdit;
-    private MenuItem cutEdit;
-    private MenuItem copyEdit;
-    private MenuItem pasteEdit;
-
-
-    private Menu searchMenu; // Search Menu
-    private MenuItem findSearch;
-    private Menu viewMenu; // View Menu
-    private Menu managemenu; //Menu
-
-    private Menu helpMenu; // Help Menu
-    private MenuItem about;
-
-    private Menu time; //Clock
-
-
-    public HeaderMenu()
+    public HeaderMenu(Stage passedStage)
     {
+        this.mainStage = passedStage;
         // Parent Menu
         this.menu = new MenuBar();
         // File Menu
-        this.fileMenu = new Menu("File");
-        this.newFile = new MenuItem("New");
-        this.openFile = new MenuItem("Open");
-        this.saveFile = new MenuItem("Save");
-        this.printFile = new MenuItem("Print");
-        this.exportFile = new MenuItem("Export as PDF");
-        this.quitFile = new MenuItem("Quit");
+        Menu fileMenu = new Menu("File");
+        MenuItem newFile = new MenuItem("New");
+        MenuItem openFile = new MenuItem("Open");
+        MenuItem saveFile = new MenuItem("Save");
+        MenuItem printFile = new MenuItem("Print");
+        MenuItem exportFile = new MenuItem("Export as PDF");
+        MenuItem quitFile = new MenuItem("Quit");
         // Edit Menu
-        this.editMenu = new Menu("Edit");
-        this.timeEdit = new MenuItem("Insert Time and Date");
-        this.undoEdit = new MenuItem("Undo");
-        this.redoEdit = new MenuItem("Redo");
-        this.copyEdit = new MenuItem("Copy");
-        this.cutEdit = new MenuItem("Cut");
-        this.pasteEdit = new MenuItem("Paste");
+        Menu editMenu = new Menu("Edit");
+        MenuItem timeEdit = new MenuItem("Insert Time and Date");
+        MenuItem undoEdit = new MenuItem("Undo");
+        MenuItem redoEdit = new MenuItem("Redo");
+        MenuItem copyEdit = new MenuItem("Copy");
+        MenuItem cutEdit = new MenuItem("Cut");
+        MenuItem pasteEdit = new MenuItem("Paste");
         // Search Menu
-        this.searchMenu = new Menu("Search");
-        this.findSearch = new MenuItem("Find");
+        Menu searchMenu = new Menu("Search");
+        MenuItem findSearch = new MenuItem("Find");
         // View Menu
-        this.viewMenu = new Menu("View");
+        Menu viewMenu = new Menu("View");
         // Manage Menu
-        this.managemenu = new Menu("Manage");
+        //Menu
+        Menu manageMenu = new Menu("Manage");
         // Help Menu
-        this.helpMenu = new Menu("Help");
-        this.about = new MenuItem("About");
+        // Help Menu
+        Menu helpMenu = new Menu("Help");
+        MenuItem about = new MenuItem("About");
 
         // Setting undo/redo to unavailable
         undoEdit.setDisable(true);
@@ -102,7 +79,7 @@ public class HeaderMenu
         helpMenu.getItems().addAll(about);
         searchMenu.getItems().addAll(findSearch);
         // Parent Menu Node Assignment
-        menu.getMenus().addAll(fileMenu, editMenu, searchMenu, viewMenu, managemenu, helpMenu);
+        menu.getMenus().addAll(fileMenu, editMenu, searchMenu, viewMenu, manageMenu, helpMenu);
 
         // Setting actions
         newFile.setOnAction(event ->
@@ -112,7 +89,7 @@ public class HeaderMenu
             // Clearing editor and clearing undo history
             editor.clear();
             editor.getUndoManager().forgetHistory();
-
+            mainStage.setTitle("Untitled - Ultimate Text Editor 9000");
         });
 
         openFile.setOnAction(event ->
@@ -132,7 +109,7 @@ public class HeaderMenu
                 return;
             }
 
-            String toSet = null;
+            String toSet;
             try
             {
                 toSet = new FileIO().Open(selectedFile);
@@ -146,10 +123,10 @@ public class HeaderMenu
             }
 
             CodeArea editor = getEditor();
-
             editor.clear();
             editor.appendText(toSet);
             editor.getUndoManager().forgetHistory();
+            mainStage.setTitle(FilenameUtils.getName(selectedFile.toString()) + " - Ultimate Text Editor 9000");
         });
 
         saveFile.setOnAction(event ->
@@ -169,6 +146,7 @@ public class HeaderMenu
             try
             {
                 new FileIO().Save(getEditor().getText(), selectedFile);
+                mainStage.setTitle(FilenameUtils.getName(selectedFile.toString()) + " - Ultimate Text Editor 9000");
             } catch (IOException e)
             {
                 Alert alert = new Alert(Alert.AlertType.ERROR);
@@ -234,7 +212,6 @@ public class HeaderMenu
         {
             StringBuilder insert = new StringBuilder();
             SimpleDateFormat timeFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss z");
-            ;
             Date dateTime = new Date(System.currentTimeMillis());
             insert.append(timeFormat.format(dateTime)).append("\n");
             getEditor().insertText(0, insert.toString());
@@ -269,8 +246,7 @@ public class HeaderMenu
             topRow.setSpacing(6);
             bottomRow.setSpacing(6);
 
-            // Set a listener to update search when user changes text in search dialog, display the numbner of results
-            // below the textfield and button
+            // Set a listener to update search when user changes text in search dialog
             matchEntry.textProperty().addListener(new ChangeListener<String>()
             {
                 @Override
