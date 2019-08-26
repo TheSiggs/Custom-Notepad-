@@ -36,7 +36,7 @@ public class Search
     public int[] nextPosition(int[] pos)
     {
         int[] next = null;
-        if (positions.size() == 0) return null; // If no results are found positions returns none
+        if (positions == null || positions.size() == 0) return null;
 
         // Find the next match after the current pos, can break as the positions list is ordered
         for (int[] p : positions)
