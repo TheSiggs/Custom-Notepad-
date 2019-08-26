@@ -1,26 +1,15 @@
-# Assignment Doc: 
-https://docs.google.com/document/d/1bkOATqob7ppA0bl015S6donv_HlgN6zzUAz0pVW9YAE/edit
+# Members
+Sam Siggs
 
-# Tools
- - intelliJ (eclipse for reporting)
- - Maven
+Jurgen van Rooyen - 18037406
 
-# Conventions
-  - Tabbed (four spaces)
-  - New line braces
+# Running the Program
 
-# Design
- UML
+# Significant Commits
+### Sam
 
-# Work Split
-Wait on UML
+### Jurgen
+* 15f2927b
+* 50000971
 
-# Libraries
- - JavaFX
- - ODF
-
-# Issue Tracking
-Using gitlab's tracker
-
-# Additional Features
- TBD
+# Additional Functions
