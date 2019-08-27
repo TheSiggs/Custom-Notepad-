@@ -1,7 +1,7 @@
-<<<<<<< HEAD
+
 # Assignment Doc: 
  https://docs.google.com/document/d/1bkOATqob7ppA0bl015S6donv_HlgN6zzUAz0pVW9YAE/edit
-=======
+
 # Members
 Sam Siggs - 16059692
 
@@ -38,6 +38,7 @@ Contains a .txt for testing of the open function
 
 # Significant Commits
 ### Sam
+
 
 ### Jurgen
 * 15f2927b
