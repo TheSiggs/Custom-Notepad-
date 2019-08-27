@@ -64,6 +64,7 @@ public class HeaderMenu
         // View Menu
         Menu viewMenu = new Menu("View");
         Menu ColourSchemes = new Menu("Colour Schemes");
+        MenuItem Default = new MenuItem("Default");
         MenuItem Tron = new MenuItem("Tron");
         MenuItem Lavender = new MenuItem("Lavender");
         MenuItem Crisp = new MenuItem("Crisp");
@@ -84,13 +85,14 @@ public class HeaderMenu
         fileMenu.getItems().addAll(newFile, openFile, saveFile, printFile, exportFile, quitFile);
         editMenu.getItems().addAll(timeEdit, undoEdit, redoEdit, copyEdit, cutEdit, pasteEdit);
         viewMenu.getItems().addAll(ColourSchemes);
-        ColourSchemes.getItems().addAll(Tron, Lavender, Crisp);
+        ColourSchemes.getItems().addAll(Default, Tron, Lavender, Crisp);
         helpMenu.getItems().addAll(about);
         searchMenu.getItems().addAll(findSearch);
         // Parent Menu Node Assignment
         menu.getMenus().addAll(fileMenu, editMenu, searchMenu, viewMenu, manageMenu, helpMenu);
 
         // Colour Schemes from View Menu
+        Default.setOnAction( e -> { mainEditor.setId("default"); });
         Tron.setOnAction( e -> { mainEditor.setId("tron"); });
         Lavender.setOnAction( e -> { mainEditor.setId("lavender");});
         Crisp.setOnAction( e -> {mainEditor.setId("crisp");});
