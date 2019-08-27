@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pmd xmlns="http://pmd.sourceforge.net/report/2.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://pmd.sourceforge.net/report/2.0.0 http://pmd.sourceforge.net/report_2_0_0.xsd"
+    version="6.13.0" timestamp="2019-08-27T22:57:50.999">
+<file name="E:\IdeaProjects\251-assignment1-sam-jurgen\src\main\java\src\Export.java">
+<violation beginline="64" endline="64" begincolumn="35" endcolumn="51" rule="UselessParentheses" ruleset="Code Style" package="src" class="Export" method="writePDF" externalInfoUrl="https://pmd.github.io/pmd-6.13.0/pmd_rules_java_codestyle.html#uselessparentheses" priority="4">
+Useless parentheses.
+</violation>
+</file>
+<file name="E:\IdeaProjects\251-assignment1-sam-jurgen\src\main\java\src\FooterMenu.java">
+<violation beginline="19" endline="19" begincolumn="16" endcolumn="26" rule="UnusedLocalVariable" ruleset="Best Practices" package="src" class="FooterMenu" method="FooterMenu" variable="screenWidth" externalInfoUrl="https://pmd.github.io/pmd-6.13.0/pmd_rules_java_bestpractices.html#unusedlocalvariable" priority="3">
+Avoid unused local variables such as 'screenWidth'.
+</violation>
+</file>
+<file name="E:\IdeaProjects\251-assignment1-sam-jurgen\src\main\java\src\Main.java">
+<violation beginline="53" endline="53" begincolumn="31" endcolumn="36" rule="UnusedLocalVariable" ruleset="Best Practices" package="src" class="Main" method="call" variable="finalI" externalInfoUrl="https://pmd.github.io/pmd-6.13.0/pmd_rules_java_bestpractices.html#unusedlocalvariable" priority="3">
+Avoid unused local variables such as 'finalI'.
+</violation>
+</file>
+</pmd>

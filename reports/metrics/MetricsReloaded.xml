@@ -1,0 +1,125 @@
+<METRICS profile="Lines of code metrics" timestamp="Tue, 27 Aug 2019 22:52:10 NZST">
+	<METRIC category="Package" name="Lines of code" abbreviation="LOC">
+		<VALUE measured="" value="107.0"/>
+		<VALUE measured="src" value="882.0"/>
+	</METRIC>
+	<METRIC category="Package" name="Lines of code (recursive)" abbreviation="LOC(rec)">
+		<VALUE measured="" value="989.0"/>
+		<VALUE measured="src" value="882.0"/>
+	</METRIC>
+	<METRIC category="Package" name="Lines of product code" abbreviation="LOCp">
+		<VALUE measured="" value="0.0"/>
+		<VALUE measured="src" value="882.0"/>
+	</METRIC>
+	<METRIC category="Package" name="Lines of product code (recursive)" abbreviation="LOCp(rec)">
+		<VALUE measured="" value="882.0"/>
+		<VALUE measured="src" value="882.0"/>
+	</METRIC>
+	<METRIC category="Package" name="Lines of test code" abbreviation="LOCt">
+		<VALUE measured="" value="107.0"/>
+		<VALUE measured="src" value="0.0"/>
+	</METRIC>
+	<METRIC category="Package" name="Lines of test code (recursive)" abbreviation="LOCt(rec)">
+		<VALUE measured="" value="107.0"/>
+		<VALUE measured="src" value="0.0"/>
+	</METRIC>
+	<METRIC category="Module" name="Lines of CSS" abbreviation="L(CSS)">
+		<VALUE measured="maven-text" value="57.0"/>
+	</METRIC>
+	<METRIC category="Module" name="Lines of Groovy" abbreviation="L(Groovy)">
+		<VALUE measured="maven-text" value="0.0"/>
+	</METRIC>
+	<METRIC category="Module" name="Lines of HTML" abbreviation="L(HTML)">
+		<VALUE measured="maven-text" value="0.0"/>
+	</METRIC>
+	<METRIC category="Module" name="Lines of Java" abbreviation="L(J)">
+		<VALUE measured="maven-text" value="924.0"/>
+	</METRIC>
+	<METRIC category="Module" name="Lines of JavaScript" abbreviation="L(JS)">
+		<VALUE measured="maven-text" value="0.0"/>
+	</METRIC>
+	<METRIC category="Module" name="Lines of JSP" abbreviation="L(JSP)">
+		<VALUE measured="maven-text" value="0.0"/>
+	</METRIC>
+	<METRIC category="Module" name="Lines of Kotlin" abbreviation="L(KT)">
+		<VALUE measured="maven-text" value="0.0"/>
+	</METRIC>
+	<METRIC category="Module" name="Lines of XML" abbreviation="L(XML)">
+		<VALUE measured="maven-text" value="225.0"/>
+	</METRIC>
+	<METRIC category="Module" name="Lines of code" abbreviation="LOC">
+		<VALUE measured="maven-text" value="1277.0"/>
+	</METRIC>
+	<METRIC category="Module" name="Lines of product code" abbreviation="LOCp">
+		<VALUE measured="maven-text" value="882.0"/>
+	</METRIC>
+	<METRIC category="Module" name="Lines of test code" abbreviation="LOCt">
+		<VALUE measured="maven-text" value="107.0"/>
+	</METRIC>
+	<METRIC category="Module" name="Non-comment lines of code" abbreviation="NCLOC">
+		<VALUE measured="maven-text" value="1154.0"/>
+	</METRIC>
+	<METRIC category="Module" name="Non-comment lines of code (product)" abbreviation="NCLOCp">
+		<VALUE measured="maven-text" value="784.0"/>
+	</METRIC>
+	<METRIC category="Module" name="Non-comment lines of code (test)" abbreviation="NCLOCt">
+		<VALUE measured="maven-text" value="101.0"/>
+	</METRIC>
+	<METRIC category="FileType" name="Lines of code" abbreviation="LOC">
+		<VALUE measured="Java" value="924.0"/>
+		<VALUE measured="Text" value="22.0"/>
+		<VALUE measured="Eclipse project" value="11.0"/>
+		<VALUE measured="Cascading style sheet" value="57.0"/>
+		<VALUE measured="XML" value="225.0"/>
+		<VALUE measured="Markdown" value="38.0"/>
+	</METRIC>
+	<METRIC category="FileType" name="Non-comment lines of code" abbreviation="NCLOC">
+		<VALUE measured="Java" value="844.0"/>
+		<VALUE measured="Eclipse project" value="11.0"/>
+		<VALUE measured="Cascading style sheet" value="36.0"/>
+		<VALUE measured="XML" value="225.0"/>
+		<VALUE measured="Markdown" value="38.0"/>
+	</METRIC>
+	<METRIC category="Project" name="Lines of CSS" abbreviation="L(CSS)">
+		<VALUE measured="project" value="57.0"/>
+	</METRIC>
+	<METRIC category="Project" name="Lines of Groovy" abbreviation="L(Groovy)">
+		<VALUE measured="project" value="0.0"/>
+	</METRIC>
+	<METRIC category="Project" name="Lines of HTML" abbreviation="L(HTML)">
+		<VALUE measured="project" value="0.0"/>
+	</METRIC>
+	<METRIC category="Project" name="Lines of Java" abbreviation="L(J)">
+		<VALUE measured="project" value="924.0"/>
+	</METRIC>
+	<METRIC category="Project" name="Lines of JavaScript" abbreviation="L(JS)">
+		<VALUE measured="project" value="0.0"/>
+	</METRIC>
+	<METRIC category="Project" name="Lines of JSP" abbreviation="L(JSP)">
+		<VALUE measured="project" value="0.0"/>
+	</METRIC>
+	<METRIC category="Project" name="Lines of Kotlin" abbreviation="L(KT)">
+		<VALUE measured="project" value="0.0"/>
+	</METRIC>
+	<METRIC category="Project" name="Lines of XML" abbreviation="L(XML)">
+		<VALUE measured="project" value="225.0"/>
+	</METRIC>
+	<METRIC category="Project" name="Lines of code" abbreviation="LOC">
+		<VALUE measured="project" value="1277.0"/>
+	</METRIC>
+	<METRIC category="Project" name="Lines of product code" abbreviation="LOCp">
+		<VALUE measured="project" value="882.0"/>
+	</METRIC>
+	<METRIC category="Project" name="Lines of test code" abbreviation="LOCt">
+		<VALUE measured="project" value="107.0"/>
+	</METRIC>
+	<METRIC category="Project" name="Non-comment lines of code" abbreviation="NCLOC">
+		<VALUE measured="project" value="1154.0"/>
+	</METRIC>
+	<METRIC category="Project" name="Non-comment lines of code (product)" abbreviation="NCLOCp">
+		<VALUE measured="project" value="784.0"/>
+	</METRIC>
+	<METRIC category="Project" name="Non-comment lines of code (test)" abbreviation="NCLOCt">
+		<VALUE measured="project" value="101.0"/>
+	</METRIC>
+</METRICS>
