@@ -34,10 +34,12 @@ public class HeaderMenu
 
     private MenuBar menu; // Parent Menu
     private Stage mainStage;
+    private CodeArea mainEditor;
 
-    public HeaderMenu(Stage passedStage)
+    public HeaderMenu(Stage passedStage, CodeArea passedEditor)
     {
         this.mainStage = passedStage;
+        this.mainEditor = passedEditor;
         // Parent Menu
         this.menu = new MenuBar();
         // File Menu
@@ -61,6 +63,11 @@ public class HeaderMenu
         MenuItem findSearch = new MenuItem("Find");
         // View Menu
         Menu viewMenu = new Menu("View");
+        Menu ColourSchemes = new Menu("Colour Schemes");
+        MenuItem Tron = new MenuItem("Tron");
+        MenuItem Lavender = new MenuItem("Lavender");
+        MenuItem Crisp = new MenuItem("Crisp");
+
         // Manage Menu
         //Menu
         Menu manageMenu = new Menu("Manage");
@@ -76,10 +83,17 @@ public class HeaderMenu
         // Child Menu Assignments
         fileMenu.getItems().addAll(newFile, openFile, saveFile, printFile, exportFile, quitFile);
         editMenu.getItems().addAll(timeEdit, undoEdit, redoEdit, copyEdit, cutEdit, pasteEdit);
+        viewMenu.getItems().addAll(ColourSchemes);
+        ColourSchemes.getItems().addAll(Tron, Lavender, Crisp);
         helpMenu.getItems().addAll(about);
         searchMenu.getItems().addAll(findSearch);
         // Parent Menu Node Assignment
         menu.getMenus().addAll(fileMenu, editMenu, searchMenu, viewMenu, manageMenu, helpMenu);
+
+        // Colour Schemes from View Menu
+        Tron.setOnAction( e -> { mainEditor.setId("tron"); });
+        Lavender.setOnAction( e -> { mainEditor.setId("lavender");});
+        Crisp.setOnAction( e -> {mainEditor.setId("crisp");});
 
         // Setting actions
         newFile.setOnAction(event ->

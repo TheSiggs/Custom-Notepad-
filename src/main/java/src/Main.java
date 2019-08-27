@@ -27,13 +27,18 @@ public class Main extends Application
         BorderPane layout = new BorderPane();
         Scene scene = new Scene(layout, 500, 800);
 
-        // Header
-        HeaderMenu menu = new HeaderMenu(primaryStage);
+        // CSS
+        String css = this.getClass().getResource("Style.css").toExternalForm();
+        scene.getStylesheets().add(css);
 
         // Editor
         CodeArea editor = new CodeArea();
+//        editor.setId("tron");
         editor.setWrapText(true);
         editor.setParagraphGraphicFactory(LineNumberFactory.get(editor));
+
+        // Header
+        HeaderMenu menu = new HeaderMenu(primaryStage, editor);
 
         // Footer
         FooterMenu footer = new FooterMenu();
