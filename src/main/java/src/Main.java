@@ -32,26 +32,31 @@ public class Main extends Application
         scene.getStylesheets().add(css);
 
         // Header
-        HeaderMenu menu = new HeaderMenu();
+        HeaderMenu menu = new HeaderMenu(primaryStage);
 
         // Editor
         CodeArea editor = new CodeArea();
         editor.setId("editor");
         editor.setWrapText(true);
         editor.setParagraphGraphicFactory(LineNumberFactory.get(editor));
-        
+
         // Footer
         FooterMenu footer = new FooterMenu();
         // Updates carret location every 100 milliseconds
-        Task task = new Task<Void>() {
+        Task task = new Task<Void>()
+        {
             @Override
-            public Void call() throws Exception {
+            public Void call() throws Exception
+            {
                 int i = 0;
-                while (true) {
+                while (true)
+                {
                     final int finalI = i;
-                    Platform.runLater(new Runnable() {
+                    Platform.runLater(new Runnable()
+                    {
                         @Override
-                        public void run() {
+                        public void run()
+                        {
                             footer.setCurserLocation(editor.getCurrentParagraph(), editor.getCaretColumn());
                         }
                     });
@@ -63,6 +68,43 @@ public class Main extends Application
         Thread th = new Thread(task);
         th.setDaemon(true);
         th.start();
+
+        Task editCheck = new Task<Void>()
+        {
+            @Override
+            public Void call() throws Exception
+            {
+                while (true)
+                {
+                    Platform.runLater(new Runnable()
+                    {
+                        @Override
+                        public void run()
+                        {
+                            if (editor.isUndoAvailable())
+                            {
+                                menu.getMenu().getMenus().get(1).getItems().get(1).setDisable(false);
+                            } else
+                            {
+                                menu.getMenu().getMenus().get(1).getItems().get(1).setDisable(true);
+                            }
+
+                            if (editor.isRedoAvailable())
+                            {
+                                menu.getMenu().getMenus().get(1).getItems().get(2).setDisable(false);
+                            } else
+                            {
+                                menu.getMenu().getMenus().get(1).getItems().get(2).setDisable(true);
+                            }
+                        }
+                    });
+                    Thread.sleep(100);
+                }
+            }
+        };
+        Thread editThread = new Thread(editCheck);
+        editThread.setDaemon(true);
+        editThread.start();
 
         // Layouts for borderpane - feel free to change
         // Top BorderPane

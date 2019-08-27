@@ -1,18 +1,27 @@
 package src;
 
+import javafx.application.Platform;
+import javafx.beans.value.ChangeListener;
+import javafx.beans.value.ObservableValue;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.geometry.Insets;
 import javafx.geometry.Pos;
 import javafx.scene.Scene;
 import javafx.scene.control.*;
+import javafx.scene.input.Clipboard;
+import javafx.scene.input.ClipboardContent;
 import javafx.scene.layout.*;
+import javafx.scene.paint.Color;
 import javafx.scene.text.Font;
 import javafx.stage.FileChooser;
 import javafx.stage.Stage;
+import javafx.stage.StageStyle;
+import org.apache.commons.io.FilenameUtils;
 import org.apache.tika.exception.TikaException;
 import org.fxmisc.flowless.VirtualizedScrollPane;
 import org.fxmisc.richtext.CodeArea;
+import org.fxmisc.richtext.NavigationActions;
 import org.xml.sax.SAXException;
 import java.io.File;
 import java.io.IOException;
@@ -24,60 +33,53 @@ public class HeaderMenu
 {
 
     private MenuBar menu; // Parent Menu
+    private Stage mainStage;
 
-    private Menu fileMenu; // File Menu
-    private MenuItem newFile;
-    private MenuItem openFile;
-    private MenuItem saveFile;
-    private MenuItem printFile;
-    private MenuItem exportFile;
-
-    private Menu editMenu;
-    private MenuItem timeEdit;
-
-    private Menu searchMenu; // Search Menu
-    private MenuItem findSearch;
-    private Menu viewMenu; // View Menu
-    private Menu managemenu; //Menu
-
-    private Menu helpMenu; // Help Menu
-    private MenuItem about;
-
-    private Menu time; //Clock
-
-
-    public HeaderMenu()
+    public HeaderMenu(Stage passedStage)
     {
+        this.mainStage = passedStage;
         // Parent Menu
         this.menu = new MenuBar();
         // File Menu
-        this.fileMenu = new Menu("File");
-        this.newFile = new MenuItem("New");
-        this.openFile = new MenuItem("Open");
-        this.saveFile = new MenuItem("Save");
-        this.printFile = new MenuItem("Print");
-        this.exportFile = new MenuItem("Export as PDF");
+        Menu fileMenu = new Menu("File");
+        MenuItem newFile = new MenuItem("New");
+        MenuItem openFile = new MenuItem("Open");
+        MenuItem saveFile = new MenuItem("Save");
+        MenuItem printFile = new MenuItem("Print");
+        MenuItem exportFile = new MenuItem("Export as PDF");
+        MenuItem quitFile = new MenuItem("Quit");
         // Edit Menu
-        this.editMenu = new Menu("Edit");
-        this.timeEdit = new MenuItem("Insert Time and Date");
+        Menu editMenu = new Menu("Edit");
+        MenuItem timeEdit = new MenuItem("Insert Time and Date");
+        MenuItem undoEdit = new MenuItem("Undo");
+        MenuItem redoEdit = new MenuItem("Redo");
+        MenuItem copyEdit = new MenuItem("Copy");
+        MenuItem cutEdit = new MenuItem("Cut");
+        MenuItem pasteEdit = new MenuItem("Paste");
         // Search Menu
-        this.searchMenu = new Menu("Search");
-        this.findSearch = new MenuItem("Find");
+        Menu searchMenu = new Menu("Search");
+        MenuItem findSearch = new MenuItem("Find");
         // View Menu
-        this.viewMenu = new Menu("View");
+        Menu viewMenu = new Menu("View");
         // Manage Menu
-        this.managemenu = new Menu("Manage");
+        //Menu
+        Menu manageMenu = new Menu("Manage");
         // Help Menu
-        this.helpMenu = new Menu("Help");
-        this.about = new MenuItem("About");
+        // Help Menu
+        Menu helpMenu = new Menu("Help");
+        MenuItem about = new MenuItem("About");
+
+        // Setting undo/redo to unavailable
+        undoEdit.setDisable(true);
+        redoEdit.setDisable(true);
 
         // Child Menu Assignments
-        fileMenu.getItems().addAll(newFile, openFile, saveFile, printFile, exportFile);
-        editMenu.getItems().addAll(timeEdit);
+        fileMenu.getItems().addAll(newFile, openFile, saveFile, printFile, exportFile, quitFile);
+        editMenu.getItems().addAll(timeEdit, undoEdit, redoEdit, copyEdit, cutEdit, pasteEdit);
         helpMenu.getItems().addAll(about);
         searchMenu.getItems().addAll(findSearch);
         // Parent Menu Node Assignment
-        menu.getMenus().addAll(fileMenu, editMenu, searchMenu, viewMenu, managemenu, helpMenu);
+        menu.getMenus().addAll(fileMenu, editMenu, searchMenu, viewMenu, manageMenu, helpMenu);
 
         // Setting actions
         newFile.setOnAction(event ->
@@ -87,7 +89,7 @@ public class HeaderMenu
             // Clearing editor and clearing undo history
             editor.clear();
             editor.getUndoManager().forgetHistory();
-
+            mainStage.setTitle("Untitled - Ultimate Text Editor 9000");
         });
 
         openFile.setOnAction(event ->
@@ -107,7 +109,7 @@ public class HeaderMenu
                 return;
             }
 
-            String toSet = null;
+            String toSet;
             try
             {
                 toSet = new FileIO().Open(selectedFile);
@@ -121,10 +123,10 @@ public class HeaderMenu
             }
 
             CodeArea editor = getEditor();
-
             editor.clear();
             editor.appendText(toSet);
             editor.getUndoManager().forgetHistory();
+            mainStage.setTitle(FilenameUtils.getName(selectedFile.toString()) + " - Ultimate Text Editor 9000");
         });
 
         saveFile.setOnAction(event ->
@@ -144,6 +146,7 @@ public class HeaderMenu
             try
             {
                 new FileIO().Save(getEditor().getText(), selectedFile);
+                mainStage.setTitle(FilenameUtils.getName(selectedFile.toString()) + " - Ultimate Text Editor 9000");
             } catch (IOException e)
             {
                 Alert alert = new Alert(Alert.AlertType.ERROR);
@@ -205,14 +208,121 @@ public class HeaderMenu
             }
         });
 
-        editMenu.setOnAction(event ->
+        timeEdit.setOnAction(event ->
         {
             StringBuilder insert = new StringBuilder();
-            SimpleDateFormat timeFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss z");;
+            SimpleDateFormat timeFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss z");
             Date dateTime = new Date(System.currentTimeMillis());
             insert.append(timeFormat.format(dateTime)).append("\n");
             getEditor().insertText(0, insert.toString());
 
+        });
+
+        findSearch.setOnAction(event ->
+        {
+
+            CodeArea editor = getEditor();
+            Search search = new Search();
+
+            // Create containers and controls
+            VBox root = new VBox();
+            HBox topRow = new HBox();
+            HBox bottomRow = new HBox();
+            TextField matchEntry = new TextField();
+            Button searchButton = new Button();
+            Button nextResult = new Button();
+            Label numFound = new Label();
+
+            //Set control text
+            searchButton.setText("Search");
+            nextResult.setText("Next");
+            numFound.setText("");
+
+            // Set layout settings
+            root.setAlignment(Pos.CENTER);
+            topRow.setAlignment(Pos.TOP_CENTER);
+            bottomRow.setAlignment(Pos.BOTTOM_CENTER);
+            root.setSpacing(10);
+            topRow.setSpacing(6);
+            bottomRow.setSpacing(6);
+
+            // Set a listener to update search when user changes text in search dialog
+            matchEntry.textProperty().addListener(new ChangeListener<String>()
+            {
+                @Override
+                public void changed(ObservableValue<? extends String> observable, String oldValue, String newValue)
+                {
+                    search.updateMatch(newValue, editor.getText());
+                    int found = search.getResultNum();
+                    if (found > 0)
+                    {
+                        numFound.setTextFill(Color.BLACK);
+                        numFound.setText(found + " match(es) found");
+                    } else
+                    {
+                        numFound.setTextFill(Color.RED);
+                        numFound.setText("No matches found");
+                    }
+                }
+            });
+
+            // Go to the next result
+            nextResult.setOnAction(event1 ->
+            {
+                int[] pos = search.nextPosition(new int[]{editor.getCurrentParagraph(), editor.getCaretColumn()});
+                if (pos != null) // Guard against nullpointer if no results exist
+                {
+                    // Move the caret to highlight the word and set the editor to follow the caret
+                    getEditor().moveTo(pos[0], pos[1]);
+                    getEditor().moveTo(pos[0], pos[1] + pos[2], NavigationActions.SelectionPolicy.ADJUST);
+                    getEditor().requestFollowCaret();
+                }
+            });
+
+            // Add the controls to containers
+            topRow.getChildren().addAll(matchEntry, nextResult);
+            bottomRow.getChildren().addAll(numFound);
+            root.getChildren().addAll(topRow, bottomRow);
+
+            // Set the stage and display
+            Stage stage = new Stage();
+            stage.setTitle("Find Text");
+            stage.setScene(new Scene(root, 240, 80));
+            stage.initStyle(StageStyle.UTILITY);
+            stage.setAlwaysOnTop(true);
+            stage.show();
+        });
+
+        quitFile.setOnAction(event ->
+        {
+            Platform.exit();
+        });
+
+        copyEdit.setOnAction(event ->
+        {
+            toClipboard(getEditor().getSelectedText());
+        });
+
+        cutEdit.setOnAction(event ->
+        {
+            toClipboard(getEditor().getSelectedText());
+            getEditor().replaceSelection("");
+        });
+
+        pasteEdit.setOnAction(event ->
+        {
+            Clipboard clipboard = Clipboard.getSystemClipboard();
+            if(clipboard.getString() != null) getEditor().insertText(getEditor().getCaretPosition(), clipboard.toString());
+        });
+
+        undoEdit.setOnAction(event ->
+        {
+            getEditor().undo();
+        });
+
+        redoEdit.setOnAction(event ->
+        {
+            getEditor().redo();
         });
     }
 
@@ -227,5 +337,11 @@ public class HeaderMenu
         BorderPane bp = (BorderPane) menu.getParent().getParent();
         VirtualizedScrollPane sp = (VirtualizedScrollPane) bp.getCenter();
         return (CodeArea) sp.getContent();
+    }
+
+    private void toClipboard(String string)
+    {
+        ClipboardContent content = new ClipboardContent();
+        content.putString(string);
     }
 }
