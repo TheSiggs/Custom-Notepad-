@@ -27,13 +27,16 @@ public class Main extends Application
         BorderPane layout = new BorderPane();
         Scene scene = new Scene(layout, 500, 800);
 
+        // CSS
+        String css = this.getClass().getResource("Style.css").toExternalForm();
+        scene.getStylesheets().add(css);
+
         // Header
         HeaderMenu menu = new HeaderMenu();
 
-
-
         // Editor
         CodeArea editor = new CodeArea();
+        editor.setId("editor");
         editor.setWrapText(true);
         editor.setParagraphGraphicFactory(LineNumberFactory.get(editor));
         

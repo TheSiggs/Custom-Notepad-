@@ -1,0 +1,7 @@
+#editor .text {
+    -fx-fill: white;
+}
+
+#editor {
+    -fx-background-color: #211A22;
+}
