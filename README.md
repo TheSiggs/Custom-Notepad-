@@ -38,7 +38,9 @@ Contains a .txt for testing of the open function
 
 # Significant Commits
 ### Sam
-
+* 4c992228
+* 5ddb94dd
+* ba386666
 
 ### Jurgen
 * 15f2927b
