@@ -25,4 +25,5 @@
 
 # Additional Features
  - Colour Schemes
+ - Caret Tracker (Bottom Left hand corner of the screen)
  
