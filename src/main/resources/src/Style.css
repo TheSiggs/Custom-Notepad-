@@ -1,7 +1,59 @@
-#editor .text {
+/********************/
+/*Crisp Color Scheme*/
+/********************/
+/*Editor Text*/
+#crisp .text {
     -fx-fill: white;
 }
-
-#editor {
+ /*Editor Background*/
+#crisp {
     -fx-background-color: #211A22;
+}
+ /*Editor Selected Line*/
+#crisp .paragraph-box:has-caret {
+    -fx-background-color: #1C151C;
+}
+/*Editor Caret*/
+#crisp .caret{
+    -fx-stroke: white;
+}
+
+/********************/
+/*Lavender Color Scheme*/
+/********************/
+/*Editor Text*/
+#lavender .text {
+    -fx-fill: #B3ADB9;
+}
+ /*Editor Background*/
+#lavender {
+    -fx-background-color: #100E13;
+}
+ /*Editor Selected Line*/
+#lavender .paragraph-box:has-caret {
+    -fx-background-color: #362e40;
+}
+/*Editor Caret*/
+#lavender .caret{
+    -fx-stroke: white;
+}
+
+/********************/
+/*tron Color Scheme*/
+/********************/
+/*Editor Text*/
+#tron .text {
+    -fx-fill: #747A87;
+}
+ /*Editor Background*/
+#tron {
+    -fx-background-color: #141821;
+}
+ /*Editor Selected Line*/
+#tron .paragraph-box:has-caret {
+    -fx-background-color: #1B242D;
+}
+/*Editor Caret*/
+#tron .caret{
+    -fx-stroke: white;
 }

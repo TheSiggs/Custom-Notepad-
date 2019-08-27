@@ -31,14 +31,14 @@ public class Main extends Application
         String css = this.getClass().getResource("Style.css").toExternalForm();
         scene.getStylesheets().add(css);
 
-        // Header
-        HeaderMenu menu = new HeaderMenu(primaryStage);
-
         // Editor
         CodeArea editor = new CodeArea();
-        editor.setId("editor");
+//        editor.setId("tron");
         editor.setWrapText(true);
         editor.setParagraphGraphicFactory(LineNumberFactory.get(editor));
+
+        // Header
+        HeaderMenu menu = new HeaderMenu(primaryStage, editor);
 
         // Footer
         FooterMenu footer = new FooterMenu();
