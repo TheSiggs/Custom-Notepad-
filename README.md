@@ -1,8 +1,5 @@
-# Assignment Doc: 
-https://docs.google.com/document/d/1bkOATqob7ppA0bl015S6donv_HlgN6zzUAz0pVW9YAE/edit
-
 # Tools
- - intelliJ (eclipse for reporting)
+ - intelliJ 
  - Maven
 
 # Conventions
@@ -18,9 +15,3 @@ Wait on UML
 # Libraries
  - JavaFX
  - ODF
-
-# Issue Tracking
-Using gitlab's tracker
-
-# Additional Features
- TBD
