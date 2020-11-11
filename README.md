@@ -9,9 +9,6 @@
 # Design
  UML
 
-# Work Split
-Wait on UML
-
 # Libraries
  - JavaFX
  - ODF
